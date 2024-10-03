@@ -21,6 +21,21 @@ const config: Config = {
           100:'#fffcf2'
         },
       },
+      fontFamily:{
+        DancingScript:['var(--font-dancing-script)','sans-serif']
+      },
+      keyframes:{
+        nav:{
+          '0%':{width:'0%',transform:'translateX(0%)',},
+          '25%':{width:'50%',transform:'translateX(50%)',},
+          '50%':{width:'100%',transform:'translateX(100%)',},
+          '75%':{width:'50%',transform:'translateX(50%)',},
+          '100%':{width:'0%',transform:'translateX(0%)',},
+        }
+      },
+      animation:{
+        'nav':'nav 0.5s linear'
+      }
     },
   },
   plugins: [],

@@ -1,0 +1,1 @@
+export const navLinks =['/icons/twitter.svg','/icons/github.svg','/icons/linkedin.svg']
