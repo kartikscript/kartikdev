@@ -1,20 +1,14 @@
 import { navLinks } from '@/constants/NavLinks'
 import ToggleTheme from '../ToggleTheme'
 import MenuButton from '../MenuButton'
+import Name from '../Name'
 
 const Navbar = () => {
   return (
-    <div className='py-12 px-8 flex justify-between items-center'>
-      <div className='flex gap-2 items-end text-4xl tracking-wide font-DancingScript font-[600]'>
-        <h1 className='text-main 
-                      first-letter:text-7xl first-letter:font-[700] first-letter:leading-[0px]'
-         > Kartik</h1>
-        <h2
-            className='text-secondary
-                        first-letter:text-6xl first-letter:leading-[0px] '
-         >Script</h2>
-      </div>
-      <nav className='*:w-[35px] flex gap-12 items-center'>
+  <div className='fixed top-10  w-full '>
+    <div className='px-8 grid grid-cols-[1fr_1fr_1fr] '>
+      <Name/>
+      <nav className='*:w-[35px] justify-self-center flex gap-16 items-center'>
       {
           navLinks.map((src,i)=>{
             return(
@@ -31,15 +25,13 @@ const Navbar = () => {
           })
         }
       </nav>
-      <div className='flex items-center gap-10'>
+      <div className='justify-self-end flex items-center gap-16'>
        <ToggleTheme/>
-       <MenuButton/>
-       <div>
-
-       </div>
+          <MenuButton/>       
       </div>
 
     </div>
+</div>
   )
 }
 

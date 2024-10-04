@@ -31,10 +31,20 @@ const config: Config = {
           '50%':{width:'100%',transform:'translateX(100%)',},
           '75%':{width:'50%',transform:'translateX(50%)',},
           '100%':{width:'0%',transform:'translateX(0%)',},
+        },
+        "typing": {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        },
+        "erasing": {
+          '0%': { width: '100%' },
+          '100%': { width: '0%' },
         }
-      },
+        },
       animation:{
-        'nav':'nav 0.5s linear'
+        'nav':'nav 0.5s linear',
+        'typing':'typing 0.7s steps(20,end)',
+        'erasing':'erasing 0.7s steps(30,end) forwards'
       }
     },
   },
