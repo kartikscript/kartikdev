@@ -1,5 +1,6 @@
 'use client'
 import { MenuLinks } from '@/constants/NavLinks'
+import { ExternalLink } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
@@ -8,24 +9,27 @@ import { twMerge } from 'tailwind-merge'
 const MenuButton = () => {
 
   const [menuOpen, setMenuOpen] = useState(false)
-  const [bgImage, setBgImage] = useState({url:'/images/home.jpg',loaded:true})
-  // const [loaded, setLoaded] = useState(true)
+  const [bgImage, setBgImage] = useState('/images/home.jpg')
+  const [loaded, setLoaded] = useState(true)
   const toggleImage = (url:string) =>{
-    setBgImage({url:url,loaded:false})
+    if(bgImage===url)return
+    setLoaded(false)
+
+    const timer = setTimeout(() => {
+        setBgImage(url)
+        setLoaded(true)
+    }, 400); // Delay for the transition effect
+  
+    return () => clearTimeout(timer);
   }
 
   useEffect(() => {
     // Set opacity to 0 initially when image changes, then fade in
 
-    const timer = setTimeout(() => {
-      setBgImage({...bgImage,loaded:true});
-    }, 500); // Delay for the transition effect
-
-    return () => clearTimeout(timer);
   }, [bgImage]);
   return (
     <>
-        <div className='relative h-14 w-8 group z-20
+        <div className='relative h-14 w-8 group z-20 cursor-pointer
                         *:absolute *:w-[2px] *:bg-secondary-100 *:transition-all *:duration-300 *:delay-100
         '
         onClick={()=>setMenuOpen(prev=>!prev)}
@@ -44,19 +48,25 @@ const MenuButton = () => {
             menuOpen && 'h-[0%]'
             )}/>
         </div> 
-        <section className={`fixed top-0 whitespace-nowrap bg-black h-full ${menuOpen?"w-full right-0":"w-[0%] left-0 "} overflow-hidden transition-all duration-700 delay-100 `}>
-          <main  className='relative z-20 size-full  text-7xl text-secondary flex flex-col justify-center items-center gap-8'>
+        <section className={`fixed top-0 bg-black h-full ${menuOpen?"w-full right-0":"w-[0%] left-0 "} overflow-hidden transition-all duration-700 delay-100 `}>
+          <main  className='relative  size-full font-IBMBold text-7xl text-secondary-100 flex flex-col justify-center items-center gap-8'>
             {
               MenuLinks.map(({title,link},i)=>{
                 return(
-                  <Link key={i} onMouseEnter={()=>toggleImage(link)} href={'/'}>{title}</Link>
+                    <Link key={i}  onMouseEnter={()=>toggleImage(link)} href={'/'}
+                      className='relative group opacity-50 py-1 px-6 transition-all duration-300 skew-x-12 skew-y-1 hover:opacity-100 hover:scale-125 z-20
+                                before:absolute before:right-0 before:top-0 before:h-full before:w-0 before:bg-main hover:before:right-auto hover:before:left-0 hover:before:w-full before:transition-all before:duration-300 before:-z-10
+                                '
+                      >{title}
+                      <ExternalLink className='absolute top-0 right-0 origin-bottom-left opacity-0 scale-0 transition-all duration-500 -translate-x-1/2 translate-y-1/2 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100 group-hover:scale-150'/>
+                    </Link>
                 )
               })
             }
           </main>
           <Image 
-           className={`fixed bg-cover inset-0 ${bgImage.loaded ?'opacity-10' :'opacity-0'} transition-opacity duration-1000  z-10 size-full `}
-           src={bgImage.url}
+           className={`fixed bg-cover inset-0 ${loaded ?'opacity-15' :'opacity-0'} transition-all duration-1000  z-10 size-full `}
+           src={bgImage}
            alt='image'
            fill
           />

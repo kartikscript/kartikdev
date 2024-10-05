@@ -5,7 +5,7 @@ import Name from '../Name'
 
 const Navbar = () => {
   return (
-  <div className='fixed top-10  w-full '>
+  <div className='fixed top-6 w-full '>
     <div className='px-8 grid grid-cols-[1fr_1fr_1fr] '>
       <Name/>
       <nav className='*:w-[35px] justify-self-center flex gap-16 items-center'>

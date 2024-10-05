@@ -38,7 +38,7 @@ const Name = () => {
          > K<div className={`${isAnimating ? 'animate-erasing' :"animate-typing"} mx-[1.5px] text-4xl font-[600] overflow-hidden`}>artik</div></h1>
         <h2
             className={`text-secondary text-6xl overflow-hidden flex items-end font-[600] ${isAnimating ? 'animate-erasing' :"animate-typing"}`}
-         >Dev</h2>
+         >Script</h2>
     </div>
   )
 }

@@ -22,7 +22,9 @@ const config: Config = {
         },
       },
       fontFamily:{
-        DancingScript:['var(--font-dancing-script)','sans-serif']
+        DancingScript:['var(--font-dancing-script)','sans-serif'],
+        IBMRegular:['var(--font-IBM-regular)','sans-serif'],
+        IBMBold:['var(--font-IBM-bold)','sans-serif'],
       },
       keyframes:{
         nav:{
@@ -39,12 +41,19 @@ const config: Config = {
         "erasing": {
           '0%': { width: '100%' },
           '100%': { width: '0%' },
-        }
+        },
+        blob:{
+          '0%':{transform:'translate(0,0)',scale:'1'},
+          '33%':{transform:'translate(-20px,40px)',scale:'1.1'},
+          '66%':{transform:'translate(30px,-30px)',scale:'0.9'},
+          '100%':{transform:'translate(0,0)',scale:'1'},
+        },
         },
       animation:{
         'nav':'nav 0.5s linear',
         'typing':'typing 0.7s steps(20,end)',
-        'erasing':'erasing 0.7s steps(30,end) forwards'
+        'erasing':'erasing 0.7s steps(30,end) forwards',
+        'blob':'blob 7s infinite',
       }
     },
   },
