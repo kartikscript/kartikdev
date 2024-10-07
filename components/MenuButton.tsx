@@ -29,23 +29,23 @@ const MenuButton = () => {
   }, [bgImage]);
   return (
     <>
-        <div className='relative h-14 w-8 group z-20 cursor-pointer
-                        *:absolute *:w-[2px] *:bg-secondary-100 *:transition-all *:duration-300 *:delay-100
+        <div className='relative h-14 w-14 group z-20 cursor-pointer overflow-hidden
+                        *:absolute *:w-1 *:rounded-full *:bg-secondary-100 *:transition-all *:duration-300 *:delay-100
         '
         onClick={()=>setMenuOpen(prev=>!prev)}
         >
           <div className={twMerge(
             `left-0 bottom-0 h-[30%] ${menuOpen ||'group-hover:h-[100%]'}`,
-            menuOpen && 'h-[100%] origin-top -rotate-45'
+            menuOpen && 'h-[200%] translate-y-1/2 origin-top -rotate-45'
             )}/>
 
           <div className={twMerge(
             `left-1/2 bottom-0 h-[60%] ${menuOpen || 'group-hover:-translate-y-[22.4px]'}`,
-            menuOpen && 'h-[100%] left-0 origin-bottom-right -translate-y-[25%] rotate-45'
+            menuOpen && 'h-[80%] left-0 origin-bottom-right  rotate-45'
             )}/>
           <div className={twMerge(
             `right-0 top-0 h-[100%] ${menuOpen || 'group-hover:h-[30%]'}`,
-            menuOpen && 'h-[0%]'
+            menuOpen && 'h-[30%] rotate-45 origin-top'
             )}/>
         </div> 
         <section className={`fixed top-0 bg-black h-full ${menuOpen?"w-full right-0":"w-[0%] left-0 "} overflow-hidden transition-all duration-700 delay-100 `}>
