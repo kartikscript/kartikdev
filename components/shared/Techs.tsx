@@ -115,7 +115,7 @@ const Techs = () => {
     <motion.div  style={{scale:scale4}} transition={{duration:0.5, ease:'easeInOut'}} className='absolute top-0 left-0 size-full flex justify-center items-center'>
       <div className='bg-primary relative size-full scale-[0.25] flex flex-col gap-8 items-center justify-center'>
         <Blob/>
-        <h1 className='text-6xl font-IBMBold tracking-wider text-secondary-100 capitalize text-center px-8 rounded-3xl border-x-8 border-primary-100 leading-snug '>
+        <h1 className='text-6xl font-IBMBold tracking-wider text-secondary capitalize text-center px-8 rounded-3xl border-x-8 border-primary-100 leading-snug '>
           Step in and explore<br/> my works using <br/>these tech stacks
         </h1>
         <h1 className='text-primary-100 text-8xl font-IBMBold '>Projects</h1>

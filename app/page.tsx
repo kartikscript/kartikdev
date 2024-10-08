@@ -23,8 +23,8 @@ export default function Home() {
       <div className="w-[60%] h-[2px] bg-primary-100 mx-auto my-16"/>
       <section className="h-screen py-10 px-6 flex ">
         <main className="w-[60%] flex flex-col items-start  gap-20 z-10">
-          <h2 className="text-6xl mb-4 shadow-[0_0_15px_5px] shadow-primary-100 text-secondary rounded-2xl px-12 py-3 skew-x-6 ">What I Do Best</h2>
-          <p className=" text-xl tracking-wider leading-normal px-4 py-3 border-l border-primary-100">I am a highly skilled and passionate web developer specializing in frontend development with expertise in Next.js, TypeScript, HTML, and TailwindCSS. My deep understanding of these technologies enables me to build responsive, performant, and visually appealing web applications. I am equally proficient in backend development, where I handle APIs and perform CRUD operations using MongoDB and PostgreSQL.</p>
+          <h2 className="text-6xl mb-4 shadow-[0_0_15px_5px] shadow-primary-100 text-secondary-100 rounded-2xl px-12 py-3 skew-x-6 ">What I Do Best</h2>
+          <p className=" text-xl tracking-wider leading-normal px-4 py-3 text-secondary border-l border-primary-100">I am a highly skilled and passionate web developer specializing in frontend development with expertise in Next.js, TypeScript, HTML, and TailwindCSS. My deep understanding of these technologies enables me to build responsive, performant, and visually appealing web applications. I am equally proficient in backend development, where I handle APIs and perform CRUD operations using MongoDB and PostgreSQL.</p>
           <button className="relative mt-6 group animate-pulse text-secondary-100 text-2xl  px-4 py-1 rounded-2xl border-x-2 border-main transition-all duration-200 delay-100 
                               hover:px-6 hover:tracking-wide  hover:rounded-r-3xl hover:border-main 
                               "
@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </section>
       <section className=" py-10 px-6 mt-16">
-       <h2 className="text-6xl shadow-[0_0_15px_5px] shadow-primary-100 text-secondary inline-block  rounded-2xl px-12 py-3 skew-x-6 ">Tech Behind My Craft</h2>
+       <h2 className="text-6xl shadow-[0_0_15px_5px] shadow-primary-100 text-secondary-100 inline-block  rounded-2xl px-12 py-3 skew-x-6 ">Tech Behind My Craft</h2>
       </section>
         <Techs/>
         <Projects/>

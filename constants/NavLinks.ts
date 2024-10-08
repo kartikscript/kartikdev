@@ -36,10 +36,4 @@ export const projectLinks=[
     link:'https://work-manager-lake.vercel.app/',
     src:'/images/proj-2.png'
   },
-  {
-    title:'Socio',
-    description:' A creative exploration of frontend design, showcasing visually engaging layouts and modern UI patterns. This project demonstrates a blend of sleek aesthetics and smooth user interactions, designed to inspire and delight users with a seamless interface. Dive into this conceptual art of web design, where form meets function in a compelling way.',
-    link:'https://socio-ten.vercel.app/',
-    src:'/images/proj-3.png'
-  },
 ]
