@@ -14,13 +14,13 @@ export default function Home() {
         <div className="h-[20vh] relative z-20">
           <Navbar/>
         </div>
-        <h1 className="text-9xl tracking-wide h-[80vh] flex flex-col justify-end  py-10 px-4 text-transparent bg-clip-text bg-gradient-to-b from-20% via-50%   from-primary-100 via-secondary-100 to-primary-100">
+        <h1 className="text-9xl tracking-wide h-[80vh] flex flex-col justify-end  py-10 px-4 text-transparent bg-clip-text bg-gradient-to-b from-30% via-50% to-90% from-primary-100 via-secondary-100 to-primary-100">
           Hello,<br/>I&apos;m Kartik<br/> A Website Developer
         </h1>
         <Blob/>
 
       </div>
-      <div className="w-[60%] h-[2px] bg-primary-100 mx-auto my-16"/>
+      <div className="w-[100%] h-[2px] my-16 bg-gradient-to-r from-transparent via-secondary to-transparent via-50% from-20% to-80%"/>
       <section className="h-screen py-10 px-6 flex ">
         <main className="w-[60%] flex flex-col items-start  gap-20 z-10">
           <h2 className="text-6xl mb-4 shadow-[0_0_15px_5px] shadow-primary-100 text-secondary-100 rounded-2xl px-12 py-3 skew-x-6 ">What I Do Best</h2>
