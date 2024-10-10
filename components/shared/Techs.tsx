@@ -84,8 +84,28 @@ const Techs = () => {
     },
   ]
   return (
-  <div ref={imgRef} className='h-[120vh] sm:h-[300vh] relative'>
-  <div className='sticky top-0 overflow-hidden h-screen '>
+    <>
+    <div className='sm:hidden w-full grid gap-4 place-items-center grid-cols-[1fr_1fr]'>
+    {
+      pics.map(({ src }, i) => {
+        // console.log(width, height, left, top);
+        return (
+          <div key={i} className='size-full flex justify-center '>
+            
+              <Image
+                className='object-cover '
+                src={src}
+                alt='logo'
+                width={100}
+                height={100}
+              />
+          </div>
+        );
+      })
+    }
+    </div>
+  <div ref={imgRef} className='sm:h-[300vh] hidden sm:block'>
+   <div className='sticky top-0 overflow-hidden h-screen '>
     {
       pics.map(({ left, top, scale, src,  }, i) => {
         // console.log(width, height, left, top);
@@ -124,6 +144,7 @@ const Techs = () => {
     </motion.div>
   </div>
 </div> 
+    </>
   )
 }
 
