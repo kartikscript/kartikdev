@@ -45,7 +45,7 @@ export default function RootLayout({
     <html lang="en" >
 
           <body
-            className={`${dancingScript.variable} ${IBMBold.variable} ${IBMRegular.variable} antialiased dark:bg-primary bg-secondary-100  font-IBMRegular selection:text-secondary-100 selection:bg-main`}
+            className={`${dancingScript.variable} ${IBMBold.variable} ${IBMRegular.variable}  antialiased dark:bg-black bg-secondary-100  font-IBMRegular selection:text-secondary-100 selection:bg-main`}
           >
       <ThemeProvider
             attribute="class"
@@ -54,7 +54,9 @@ export default function RootLayout({
             disableTransitionOnChange
             
           >
+            <div className="overflow-hidden sm:overflow-visible">
             {children}
+              </div>
       </ThemeProvider>
           </body>
     </html>

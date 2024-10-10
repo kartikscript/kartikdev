@@ -7,9 +7,9 @@ import Image from 'next/image'
 const Navbar = () => {
   return (
   <div className='fixed top-6 w-full '>
-    <div className='px-8 grid grid-cols-[1fr_1fr_1fr] '>
+    <div className='px-8 grid grid-cols-2 sm:grid-cols-3 '>
       <Name/>
-      <nav className='*:w-[35px] justify-self-center flex gap-16 items-center bg-primary/80 dark:bg-primary/40 rounded-full ring-2 dark:ring-primary-100 ring-primary-100/50 px-14 backdrop-blur-sm'>
+      <nav className='*:w-[35px] hidden  sm:justify-self-center sm:flex gap-16 items-center bg-primary/80 dark:bg-primary/40 rounded-full ring-2 dark:ring-primary-100 ring-primary-100/50 px-14 backdrop-blur-sm'>
       {
           navLinks.map(({link,src},i)=>{
             return(

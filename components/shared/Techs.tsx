@@ -84,7 +84,7 @@ const Techs = () => {
     },
   ]
   return (
-  <div ref={imgRef} className='h-[300vh]  relative'>
+  <div ref={imgRef} className='h-[120vh] sm:h-[300vh] relative'>
   <div className='sticky top-0 overflow-hidden h-screen '>
     {
       pics.map(({ left, top, scale, src,  }, i) => {
@@ -118,7 +118,7 @@ const Techs = () => {
         <h1 className='text-6xl font-IBMBold tracking-wider text-primary-100 dark:text-secondary capitalize text-center px-8 rounded-3xl border-x-8 border-secondary dark:border-primary-100 leading-snug '>
           Step in and explore<br/> my works using <br/>these tech stacks
         </h1>
-        <h1 className='text-secondary dark:text-primary-100 text-8xl font-IBMBold '>Recent Projects</h1>
+        <h1 className='text-secondary text-center dark:text-primary-100 text-8xl font-IBMBold '>Recent Projects</h1>
         <ArrowDown className='text-secondary dark:text-primary-100 size-24 animate-bounce'/>
       </div>
     </motion.div>

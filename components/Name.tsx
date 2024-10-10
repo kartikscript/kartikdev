@@ -33,11 +33,11 @@ const Name = () => {
 
 
   return (
-    <div className='flex gap-1 items-end text-4xl tracking-wide font-DancingScript z-20'>
-        <h1 className={`text-main flex items-end text-7xl font-[700] `}
-         > K<div className={`${isAnimating ? 'animate-erasing' :"animate-typing"} mx-[1.5px] text-4xl font-[600] overflow-hidden`}>artik</div></h1>
+    <div className='flex gap-1 items-end tracking-wide font-DancingScript z-20'>
+        <h1 className={`text-main flex items-end text-5xl sm:text-7xl font-[700] `}
+         > K<div className={`${isAnimating ? 'animate-erasing' :"animate-typing"} mx-[1.5px] text-3xl sm:text-4xl font-[600] overflow-hidden`}>artik</div></h1>
         <h2
-            className={`text-primary-100 dark:text-secondary text-6xl overflow-hidden flex items-end font-[600] ${isAnimating ? 'animate-erasing' :"animate-typing"}`}
+            className={`text-primary-100 dark:text-secondary text-3xl sm:text-6xl overflow-hidden flex items-end font-[600] ${isAnimating ? 'animate-erasing' :"animate-typing"}`}
          >Script</h2>
     </div>
   )
