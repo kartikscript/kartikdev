@@ -61,7 +61,7 @@ export default function Home() {
             <ArrowRight className="absolute size-10 right-0 top-1/2 -translate-y-1/2 scale-0  transition-all duration-300 text-primary-100 dark:text-secondary-100 origin-left group-hover:scale-125 group-hover:-right-5"/>
             </a>     
        </main>
-       <footer className="h-[50vh] w-full bg-primary-100 flex flex-col justify-center ">
+       <footer className="h-[50vh] w-full bg-primary-100 px-4 flex flex-col justify-center ">
         <div className="flex justify-around items-start">
           <h1 className="text-5xl text-main font-DancingScript font-[600] self-center">Kartik <span className="text-secondary">Script</span></h1>
           <div >

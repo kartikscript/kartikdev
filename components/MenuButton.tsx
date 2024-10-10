@@ -66,7 +66,7 @@ const MenuButton = () => {
             }
           </main>
           <Image 
-           className={`fixed bg-cover inset-0 ${loaded ?'opacity-15' :'opacity-0'} transition-all duration-1000  z-10 size-full `}
+           className={`fixed bg-contain inset-0 ${loaded ?'opacity-15' :'opacity-0'} transition-all duration-1000  z-10 size-full `}
            src={bgImage}
            alt='image'
            fill
