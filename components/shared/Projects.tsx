@@ -1,9 +1,8 @@
 'use client'
 import React, { useRef, useState } from 'react'
-import {motion, useScroll, useTransform} from 'framer-motion'
 import { projectInfos } from '@/constants/NavLinks'
 import Image from 'next/image'
-import { ExternalLink } from 'lucide-react'
+import { ArrowDown, ArrowUp, ExternalLink } from 'lucide-react'
 import { twMerge } from 'tailwind-merge'
 
 
@@ -18,18 +17,11 @@ const Projects = () => {
       setActiveIndex(id)
   }
   const currentProjInfo = projectInfos.find(item=>item.id===activeIndex)
-  const {scrollYProgress} = useScroll({
-    target:horRef
-  })
-  const x = useTransform(scrollYProgress, [0,1], ['0%','-300vw'])
 
-console.log(activeIndex)
   return (
- <div ref={horRef}  className='h-[300vh] relative'>
-  <div className='h-screen sticky top-0 flex overflow-hidden '>
-    <motion.div style={{x}} className='flex *:w-screen *:h-screen'>
+ 
      
-              <main  className=' flex gap-20 items-center justify-center border-r-2 border-primary-100'>
+              <main id='Projects' className='h-screen overflow-hidden flex gap-20 items-center justify-center border-r-2 border-primary-100'>
                   <div className=' relative flex flex-col justify-center items-center w-[50%] h-full cursor-pointer  *:transition-all *:duration-700 
                                   before:z-20 before:absolute before:w-full before:h-[10%] before:inset-0 before:bg-gradient-to-t before:from-transparent before:to-primary before:from-10% 
                                   after:z-20 after:absolute after:w-full after:h-[10%] after:bottom-0 after:bg-gradient-to-b after:from-transparent after:to-primary after:from-10% 
@@ -71,7 +63,7 @@ console.log(activeIndex)
                     <ExternalLink className='size-10 '/>
                     <p className='text-sm '>Explore The Project</p>
                   </div> */}
-              
+             
                 <div className='w-[40%] flex flex-col gap-8 justify-start'>
                   <h2 className='text-7xl font-IBMBold text-primary-100'>Project Overview</h2>
                   <h3 className='relative text-5xl mt-6 font-IBMBold text-secondary-100 flex items-end gap-6'>{currentProjInfo?.title} <a target='_blank' href={currentProjInfo?.link}><ExternalLink className='size-8'/></a></h3>
@@ -81,14 +73,7 @@ console.log(activeIndex)
               
               </main>
       
-              <div>
-                
-              </div>
-              <div className='bg-amber-500'></div>
-              <div className='bg-pink-500'></div>
-    </motion.div>
-  </div>
-</div>
+             
   )
 }
 

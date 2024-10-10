@@ -11,7 +11,7 @@ const ToggleTheme = () => {
 }
 
   return (
-    <div onClick={toggleDark} className=' w-12 h-6 rounded-3xl cursor-pointer flex items-center relative overflow-hidden bg-secondary-100'>
+    <div onClick={toggleDark} className='w-12 h-6 rounded-3xl cursor-pointer flex items-center relative overflow-hidden bg-secondary-100'>
         <div className={`absolute flex items-center justify-center p-[1px] ${darkMode?'translate-x-[26px]':'left-[5%] text-yellow-600 bg'} size-5 rounded-full transition-transform duration-300 delay-75 bg-secondary `}>
           {darkMode?<Moon fill='#075985'  stroke='#0284c7' strokeWidth={0.3}/>:<Sun fill='#ca8a04' />}
         </div>

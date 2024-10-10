@@ -1,26 +1,37 @@
 
-export const navLinks =['/icons/twitter.svg','/icons/github.svg','/icons/linkedin.svg']
+export const navLinks =[
+  {src:'/icons/twitter.svg',
+    link:'https://x.com/kartikscript'
+  },
+  {src:'/icons/github.svg',
+    link:'https://github.com/kartikscript'
+  },
+  {src:'/icons/linkedin.svg',
+    link:'https://www.linkedin.com/in/kartik-soni-9ba1272b6/'
+  },
+
+]
 
 export const MenuLinks =[
   {
     title:'Home',
-    link:'/images/home.jpg'
+    link:'/images/home.jpg',
+    href:'#Home'
   },
   {
     title:'About',
-    link:'/images/about.jpg'
+    link:'/images/about.jpg',
+    href:'#About'
   },
   {
     title:'Projects',
-    link:'/images/project.jpg'
+    link:'/images/project.jpg',
+    href:'#Projects'
   },
   {
     title:'Contact',
-    link:'/images/contact.jpg'
-  },
-  {
-    title:'Blog',
-    link:'/images/blog.jpg'
+    link:'/images/contact.jpg',
+    href:"#Contact"
   },
 ]
 

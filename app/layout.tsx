@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 
 
 import "./globals.css";
+import Providers from "@/components/Providers";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -42,11 +43,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${dancingScript.variable} ${IBMBold.variable} ${IBMRegular.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <Providers>
+
+          <body
+            className={`${dancingScript.variable} ${IBMBold.variable} ${IBMRegular.variable} antialiased bg-primary font-IBMRegular selection:text-secondary-100 selection:bg-main`}
+          >
+            {children}
+          </body>
+      </Providers>
     </html>
   );
 }
