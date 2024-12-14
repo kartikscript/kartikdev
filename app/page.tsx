@@ -9,17 +9,14 @@ export default function Home() {
 
  
   return (<>
-      <header id="Home" className="relative  h-screen overflow-hidden">
-        <div className="h-[20vh] relative z-30">
-          <Navbar/>
-        </div>
-        <h1 className="text-7xl sm:text-9xl tracking-wide h-[80vh] flex flex-col justify-end  py-10 px-4 text-transparent bg-clip-text bg-gradient-to-b from-30% via-50% to-90% from-primary/60 dark:from-primary-100 via-primary dark:via-secondary-100 dark:to-primary-100 to-primary/60">
-          Hello,<br/>I&apos;m Kartik<br/> A Website Developer
+      <header style={{backgroundImage:"url('/images/main-bg.jpg')"}} id="Home" className="relative bg-cover  h-screen flex items-end justify-center overflow-hidden">
+        <Navbar/>
+        <h1 className="text-7xl h-fit sm:text-9xl text-center uppercase  font-Badoni_Modi font-medium  py-8 px-4 text-transparent bg-clip-text bg-gradient-to-t from-black to-white">
+          Hello,<br/>I&apos;m <span className="">Kartik</span><br/><span className="font-[400] text-7xl tracking-[0.2em] text-white/20">A Frontend Developer</span>
         </h1>
-        <Blob/>
       </header>
 
-      <div className="w-[100%] h-[2px] my-16 bg-gradient-to-r from-transparent via-primary-100/60 dark:via-secondary to-transparent via-50% from-20% to-80%"/>
+      <div className="w-[100%] h-[2px] mb-16 bg-gradient-to-r from-transparent via-primary-100/60 dark:via-secondary to-transparent via-50% from-20% to-80%"/>
       
       <section id="About" className="min-h-screen py-10 px-6 flex ">
         <main className="sm:w-[60%] flex flex-col items-start  gap-20 z-10">

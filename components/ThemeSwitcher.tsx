@@ -21,12 +21,12 @@ const ThemeSwitcher = () => {
       {theme === "dark" ? (
         <Sun
           onClick={() => setTheme("light")}
-          className="w-6 h-6 cursor-pointer text-yellow-500"
+          className="size-7 cursor-pointer text-amber-400 hover:rotate-180 transition-all duration-500"
         />
       ) : (
         <Moon
           onClick={() => setTheme("dark")}
-          className="w-6 h-6 cursor-pointer text-blue-500"
+          className="size-7 cursor-pointer text-cyan-400 hover:animate-pulse"
         />
       )}
     </div>

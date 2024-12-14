@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import {Roboto,Bodoni_Moda, Oxanium} from "next/font/google";
 
 
 import "./globals.css";
@@ -17,19 +17,21 @@ import { ThemeProvider } from '@/components/Providers';
 // });
 
 
-const dancingScript = localFont({
-  src:"./fonts/DancingScript.ttf",
-  variable:"--font-dancing-script",
-  weight:'400 500 600 700',
-  style:'normal'
+const roboto = Roboto({
+  variable:'--font-Roboto',
+  weight:['100','300','400','500','700','900'],
+  subsets:['latin']
 })
-const IBMRegular = localFont({
-  src:"./fonts/IBMRegular.ttf",
-  variable:"--font-IBM-regular",
+
+const oxanium = Oxanium({
+  variable:'--font-Oxanium',
+  weight:['400','500','600','700',"300"],
+  subsets:['latin']
 })
-const IBMBold = localFont({
-  src:"./fonts/IBMBold.ttf",
-  variable:"--font-IBM-bold",
+const bodoni = Bodoni_Moda({
+  variable:'--font-Bodoni_Moda',
+  weight:['400','500','600','700',"800","900"],
+  subsets:['latin']
 })
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -45,7 +47,7 @@ export default function RootLayout({
     <html lang="en" >
 
           <body
-            className={`${dancingScript.variable} ${IBMBold.variable} ${IBMRegular.variable}  antialiased dark:bg-black bg-secondary-100  font-IBMRegular selection:text-secondary-100 selection:bg-main`}
+            className={`${oxanium.variable} ${bodoni.variable} ${roboto.variable} overflow-hidden sm:overflow-visible antialiased dark:bg-stone-950 bg-slate-300  font-Roboto selection:text-slate-100 selection:bg-main`}
           >
       <ThemeProvider
             attribute="class"
@@ -54,9 +56,8 @@ export default function RootLayout({
             disableTransitionOnChange
             
           >
-            <div className="overflow-hidden sm:overflow-visible">
+
             {children}
-              </div>
       </ThemeProvider>
           </body>
     </html>

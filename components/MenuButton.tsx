@@ -24,39 +24,35 @@ const MenuButton = () => {
     return () => clearTimeout(timer);
   }
 
-  useEffect(() => {
-    // Set opacity to 0 initially when image changes, then fade in
-
-  }, [bgImage]);
   return (
     <>
         <div className='relative h-14 w-14 group z-20 cursor-pointer overflow-hidden
-                        *:absolute *:w-1 *:rounded-full  dark:*:bg-secondary-100 *:transition-all *:duration-300 *:delay-100
+                        *:absolute *:w-1 *:rounded-full  dark:*:bg-white *:transition-all *:duration-300 
         '
         onClick={()=>setMenuOpen(prev=>!prev)}
         >
           <div className={twMerge(
-            `bg-primary left-0 bottom-0 h-[30%] ${menuOpen ||'group-hover:h-[100%]'}`,
-            menuOpen && 'bg-secondary-100 h-[200%] translate-y-1/2 origin-top -rotate-45'
+            `left-0 bottom-0 h-[30%] ${menuOpen ||'group-hover:h-[100%]'}`,
+            menuOpen && ' h-[200%] translate-y-1/2 origin-top -rotate-45'
             )}/>
 
           <div className={twMerge(
-            `bg-primary left-1/2 bottom-0 h-[60%] ${menuOpen || 'group-hover:-translate-y-[22.4px]'}`,
-            menuOpen && 'bg-secondary-100 h-[80%] left-0 origin-bottom-right  rotate-45'
+            `left-1/2 bottom-0 h-[60%] ${menuOpen || 'group-hover:-translate-y-[22.4px]'}`,
+            menuOpen && ' h-[80%] left-0 origin-bottom-right  rotate-45'
             )}/>
           <div className={twMerge(
-            `bg-primary right-0 top-0 h-[100%] ${menuOpen || 'group-hover:h-[30%]'}`,
-            menuOpen && 'bg-secondary-100 h-[30%] rotate-45 origin-top'
+            `right-0 top-0 h-[100%] ${menuOpen || 'group-hover:h-[30%]'}`,
+            menuOpen && ' h-[30%] rotate-45 origin-top'
             )}/>
         </div> 
-        <section className={`fixed top-0 bg-black h-full ${menuOpen?"w-full right-0":"w-[0%] left-0 "} overflow-hidden transition-all duration-700 delay-100 `}>
-          <main  className='relative  size-full font-IBMBold text-7xl text-secondary-100 flex flex-col justify-center items-center gap-8'>
+        <section className={`fixed top-0 bg-black h-full ${menuOpen?"w-full right-0":"w-[0%] left-0 "} overflow-hidden transition-all duration-700 `}>
+          <main  className='relative  size-full text-7xl text-amber-100 flex flex-col justify-center items-center gap-8'>
             {
               MenuLinks.map(({title,link,href},i)=>{
                 return(
                     <a href={href} key={i}  onMouseEnter={()=>toggleImage(link)} onClick={()=>setMenuOpen(false)}
                       className='relative group opacity-50 py-1 px-6 transition-all duration-300 skew-x-12 skew-y-1 hover:opacity-100 hover:scale-125 z-20
-                                before:absolute before:right-0 before:top-0 before:h-full before:w-0 before:bg-main hover:before:right-auto hover:before:left-0 hover:before:w-full before:transition-all before:duration-300 before:-z-10
+                                before:absolute before:right-0 before:top-0 before:h-full before:w-0 before:bg-amber-600 hover:before:right-auto hover:before:left-0 hover:before:w-full before:transition-all before:duration-500 before:-z-10
                                 '
                       >{title}
                       <ExternalLink className='absolute top-0 right-0 origin-bottom-left opacity-0 scale-0 transition-all duration-500 -translate-x-1/2 translate-y-1/2 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100 group-hover:scale-150'/>

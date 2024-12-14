@@ -22,9 +22,9 @@ const config: Config = {
         },
       },
       fontFamily:{
-        DancingScript:['var(--font-dancing-script)','sans-serif'],
-        IBMRegular:['var(--font-IBM-regular)','sans-serif'],
-        IBMBold:['var(--font-IBM-bold)','sans-serif'],
+        Roboto:['var(--font-Roboto)','sans-serif'],
+        Oxanium:['var(--font-Oxanium)','sans-serif'],
+        Badoni_Modi:['var(--font-Bodoni_Moda)','sans-serif']
       },
       keyframes:{
         nav:{
@@ -44,16 +44,22 @@ const config: Config = {
         },
         blob:{
           '0%':{transform:'translate(0,0)',scale:'1'},
-          '33%':{transform:'translate(-20px,40px)',scale:'1.1'},
-          '66%':{transform:'translate(30px,-30px)',scale:'0.9'},
+          '33%':{transform:'translate(50%,50%)',scale:'1.1'},
+          '66%':{transform:'translate(30%,-30%)',scale:'0.9'},
           '100%':{transform:'translate(0,0)',scale:'1'},
         },
+        logoBg:{
+          '0%':{backgroundPosition:"0% 50%"},
+          '50%':{backgroundPosition:"100% 50%"},
+          '100%':{backgroundPosition:"0% 50%"},
+          },
         },
       animation:{
         'nav':'nav 0.5s linear',
         'typing':'typing 0.7s steps(20,end)',
         'erasing':'erasing 0.7s steps(30,end) forwards',
         'blob':'blob 7s infinite',
+        'moving-background':'logoBg 5s infinite linear',
       }
     },
   },
