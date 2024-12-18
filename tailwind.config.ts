@@ -55,7 +55,7 @@ const config: Config = {
           },
         },
       animation:{
-        'nav':'nav 0.5s linear',
+        'nav':'nav 0.5s linear ',
         'typing':'typing 0.7s steps(20,end)',
         'erasing':'erasing 0.7s steps(30,end) forwards',
         'blob':'blob 7s infinite',

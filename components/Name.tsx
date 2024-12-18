@@ -33,9 +33,9 @@ const Name = () => {
 
 
   return (
-    <div className='relative z-30 w-fit flex items-baseline text-6xl text-white font-Badoni_Modi whitespace-nowrap '>
-        <h1 className='font-[300] text-amber-500 '>K</h1>
-        <h1 className={` text-4xl flex gap-1 font-[400] overflow-hidden ${isAnimating?"animate-erasing":"animate-typing"}`}>artik.<span className='font-light'>Script</span></h1>
+    <div className='relative z-30 w-fit flex items-baseline text-6xl text-white font-Oxanium whitespace-nowrap '>
+        <h1 className='font-[400] text-cyan-100 '>K</h1>
+        <h1 className={` text-4xl flex gap-1 font-[300] overflow-hidden ${isAnimating?"animate-erasing":"animate-typing"}`}>artik.<span className=' font-light'>Script</span></h1>
    </div>
   )
 }

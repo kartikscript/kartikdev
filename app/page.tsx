@@ -9,11 +9,15 @@ export default function Home() {
 
  
   return (<>
-      <header style={{backgroundImage:"url('/images/main-bg.jpg')"}} id="Home" className="relative bg-cover  h-screen flex items-end justify-center overflow-hidden">
+      <header id="Home" className="relative  bg-cover bg-teal-950  h-screen flex items-end justify-center overflow-hidden">
+        <Blob bottom="0%" left="50%"/>
+        <Blob top="10%" left="0%"/>
+        <Blob top="10%" right="0%"/>
         <Navbar/>
-        <h1 className="text-7xl h-fit sm:text-9xl text-center uppercase  font-Badoni_Modi font-medium  py-8 px-4 text-transparent bg-clip-text bg-gradient-to-t from-black to-white">
-          Hello,<br/>I&apos;m <span className="">Kartik</span><br/><span className="font-[400] text-7xl tracking-[0.2em] text-white/20">A Frontend Developer</span>
-        </h1>
+        <div className="space-y-10 w-full text-center uppercase py-8 px-4  ">
+          <h1 className="font-medium tracking-wide text-9xl text-transparent bg-clip-text bg-gradient-to-b from-teal-900 to-white">I am Kartik</h1>
+          <h2 className="font-[600] font-Oxanium text-7xl tracking-[0.3em] text-white">A Frontend Developer</h2>
+        </div>
       </header>
 
       <div className="w-[100%] h-[2px] mb-16 bg-gradient-to-r from-transparent via-primary-100/60 dark:via-secondary to-transparent via-50% from-20% to-80%"/>
