@@ -24,7 +24,6 @@ const config: Config = {
       fontFamily:{
         Roboto:['var(--font-Roboto)','sans-serif'],
         Oxanium:['var(--font-Oxanium)','sans-serif'],
-        Badoni_Modi:['var(--font-Bodoni_Moda)','sans-serif']
       },
       keyframes:{
         nav:{

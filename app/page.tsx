@@ -1,4 +1,5 @@
 import Blob from "@/components/Blob";
+import FloatingText from "@/components/FloatingText";
 import Navbar from "@/components/shared/Navbar";
 import Projects from "@/components/shared/Projects";
 import Techs from "@/components/shared/Techs";
@@ -9,10 +10,14 @@ export default function Home() {
 
  
   return (<>
-      <header id="Home" className="relative  bg-cover bg-teal-950  h-screen flex items-end justify-center overflow-hidden">
+      <header id="Home" className="relative  bg-cover bg-teal-950/40  h-screen flex items-end justify-center overflow-hidden">
         <Blob bottom="0%" left="50%"/>
-        <Blob top="10%" left="0%"/>
-        <Blob top="10%" right="0%"/>
+        {/* <Blob top="10%" left="0%"/>
+        <Blob top="10%" right="0%"/> */}
+        <FloatingText title='Builder' top="40%" left='10% ' delay="0.5s"/>
+        <FloatingText title='Innovator' top="30%" left='30% ' delay="1s"/>
+        <FloatingText title='Visionary' top="30%" right='30% ' delay="1.5s"/>
+        <FloatingText title='Creator' top="40%" right='10% ' delay="2s"/>
         <Navbar/>
         <div className="space-y-10 w-full text-center uppercase py-8 px-4  ">
           <h1 className="font-medium tracking-wide text-9xl text-transparent bg-clip-text bg-gradient-to-b from-teal-900 to-white">I am Kartik</h1>
@@ -20,9 +25,9 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="w-[100%] h-[2px] mb-16 bg-gradient-to-r from-transparent via-primary-100/60 dark:via-secondary to-transparent via-50% from-20% to-80%"/>
+      <div className="w-[100%] h-[2px] bg-teal-950/10 bg-gradient-to-r from-transparent via-white to-transparent via-50% from-20% to-80%"/>
       
-      <section id="About" className="min-h-screen py-10 px-6 flex ">
+      <section id="About" className="min-h-screen py-10 px-6 flex bg-teal-950/10 ">
         <main className="sm:w-[60%] flex flex-col items-start  gap-20 z-10">
           <h2 className="text-7xl mb-4 shadow-[0_0_15px_5px] shadow-secondary dark:shadow-primary text-primary-100 dark:text-secondary-100 rounded-2xl px-12 py-3 skew-x-6 dark:first-line:text-primary-100 first-line:text-secondary bg-transparent hover:bg-primary-100/5 dark:hover:bg-primary-100/30 hover:shadow-primary/30 dark:hover:shadow-secondary/30 transition-all duration-500 ">What <br/>I Do Best</h2>
           <p className=" text-xl tracking-wider leading-normal px-4 py-3 text-primary dark:text-secondary border-l border-secondary dark:border-primary-100">I am a highly skilled and passionate web developer specializing in frontend development with expertise in Next.js, TypeScript, HTML, and TailwindCSS. My deep understanding of these technologies enables me to build responsive, performant, and visually appealing web applications. I am equally proficient in backend development, where I handle APIs and perform CRUD operations using MongoDB and PostgreSQL.</p>

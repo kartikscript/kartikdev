@@ -3,6 +3,7 @@ import MenuButton from '../MenuButton'
 import Name from '../Name'
 import ThemeSwitcher from '../ThemeSwitcher'
 import Image from 'next/image'
+import { ArrowRight} from 'lucide-react'
 
 const Navbar = () => {
   return (
@@ -36,9 +37,12 @@ const Navbar = () => {
           })
         }
       </nav>
-      <div className='justify-self-end flex items-center gap-16'>
-        <button className='relative top-0 py-3 px-6 shadow-sm text-white font-Oxanium tracking-widest backdrop-blur-sm bg-gradient-to-tr from-teal-500/70 via-teal-800/70 to-teal-900/70 rounded-full
-         hover:text-white hover:bg-teal-900/70 hover:-top-1 hover:shadow-lg hover:shadow-teal-900 transition-all '>Book Now</button>
+      <div className='justify-self-end flex items-center gap-8'>
+        <button className='relative group flex gap-1 items-center top-0 mr-4 py-3 px-6 shadow-sm text-white font-Oxanium tracking-widest backdrop-blur-sm bg-gradient-to-tr from-teal-500/70 via-teal-800/70 to-teal-900/70 rounded-full
+         hover:text-white hover:bg-teal-900/70 hover:-top-1 hover:shadow-lg hover:shadow-teal-900 transition-all '>
+          Book Now
+          <ArrowRight className='rotate-0 group-hover:-rotate-45 transition-all'/>
+        </button>
        <ThemeSwitcher/> 
           <MenuButton/>       
       </div>

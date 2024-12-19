@@ -2,7 +2,7 @@
 import { MenuLinks } from '@/constants/NavLinks'
 import { ExternalLink } from 'lucide-react'
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import { twMerge } from 'tailwind-merge'
 
 const MenuButton = () => {
