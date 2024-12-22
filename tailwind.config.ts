@@ -52,6 +52,10 @@ const config: Config = {
           '50%':{backgroundPosition:"100% 50%"},
           '100%':{backgroundPosition:"0% 50%"},
           },
+        moving:{
+          '0%':{transform:'translate(0%,0%)'},
+          '100%':{transform:'translate(-100%,0%)'},
+        }
         },
       animation:{
         'nav':'nav 0.5s linear ',
@@ -59,6 +63,7 @@ const config: Config = {
         'erasing':'erasing 0.7s steps(30,end) forwards',
         'blob':'blob 7s infinite',
         'moving-background':'logoBg 5s infinite linear',
+        'hor-move':"moving 4s infinite linear"
       }
     },
   },

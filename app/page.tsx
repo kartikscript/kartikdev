@@ -3,6 +3,8 @@ import FloatingText from "@/components/FloatingText";
 import Navbar from "@/components/shared/Navbar";
 import Projects from "@/components/shared/Projects";
 import Techs from "@/components/shared/Techs";
+import TextHor from "@/components/TextHor";
+import Title from "@/components/Title";
 import { ArrowRight} from "lucide-react";
 import Image from "next/image";
 
@@ -27,8 +29,11 @@ export default function Home() {
 
       <div className="w-[100%] h-[2px] bg-teal-950/10 bg-gradient-to-r from-transparent via-white to-transparent via-50% from-20% to-80%"/>
       
-      <section id="About" className="min-h-screen py-10 px-6 flex bg-teal-950/10 ">
-        <main className="sm:w-[60%] flex flex-col items-start  gap-20 z-10">
+        {/* <TextHor/> */}
+      <section id="About" className="min-h-screen py-10 px-6  bg-teal-950/10 ">
+        <Title title="My Expertise"/>
+        
+        {/* <main className="sm:w-[60%] flex flex-col items-start  gap-20 z-10">
           <h2 className="text-7xl mb-4 shadow-[0_0_15px_5px] shadow-secondary dark:shadow-primary text-primary-100 dark:text-secondary-100 rounded-2xl px-12 py-3 skew-x-6 dark:first-line:text-primary-100 first-line:text-secondary bg-transparent hover:bg-primary-100/5 dark:hover:bg-primary-100/30 hover:shadow-primary/30 dark:hover:shadow-secondary/30 transition-all duration-500 ">What <br/>I Do Best</h2>
           <p className=" text-xl tracking-wider leading-normal px-4 py-3 text-primary dark:text-secondary border-l border-secondary dark:border-primary-100">I am a highly skilled and passionate web developer specializing in frontend development with expertise in Next.js, TypeScript, HTML, and TailwindCSS. My deep understanding of these technologies enables me to build responsive, performant, and visually appealing web applications. I am equally proficient in backend development, where I handle APIs and perform CRUD operations using MongoDB and PostgreSQL.</p>
           
@@ -46,7 +51,7 @@ export default function Home() {
             alt="photo"
             fill
           />
-        </div>
+        </div> */}
       </section>
       <section  className=" py-10 px-6 mt-16">
       <h2 className="text-7xl mb-4 shadow-[0_0_15px_5px] shadow-secondary dark:shadow-primary text-primary-100 dark:text-secondary-100 rounded-2xl px-12 py-3 skew-x-6 inline-block dark:first-line:text-primary-100 first-line:text-secondary bg-transparent hover:bg-primary-100/5 dark:hover:bg-primary-100/30 hover:shadow-primary/30 dark:hover:shadow-secondary/30 transition-all duration-500 ">Techs <br/>Behind My Crafts</h2>
