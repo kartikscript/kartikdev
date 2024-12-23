@@ -43,7 +43,7 @@ export default function RootLayout({
     <html lang="en" >
 
           <body
-            className={`${oxanium.variable} ${roboto.variable} overflow-hidden sm:overflow-visible antialiased dark:bg-stone-950 bg-slate-300  font-Roboto selection:text-slate-100 selection:bg-main`}
+            className={`${oxanium.variable} ${roboto.variable}  dark:bg-stone-950 bg-slate-300  font-Roboto selection:text-slate-100 selection:bg-main`}
           >
       <ThemeProvider
             attribute="class"

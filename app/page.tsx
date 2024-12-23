@@ -5,6 +5,8 @@ import Projects from "@/components/shared/Projects";
 import Techs from "@/components/shared/Techs";
 import TextHor from "@/components/TextHor";
 import Title from "@/components/Title";
+import { BackgroundBeams } from "@/components/ui/background-beams";
+import { EvervaultCard } from "@/components/ui/evervault-card";
 import { ArrowRight} from "lucide-react";
 import Image from "next/image";
 
@@ -12,52 +14,58 @@ export default function Home() {
 
  
   return (<>
-      <header id="Home" className="relative  bg-cover bg-teal-950/40  h-screen flex items-end justify-center overflow-hidden">
-        <Blob bottom="0%" left="50%"/>
+      <header id="Home" className="relative  bg-cover bg-black  h-screen flex items-end justify-center overflow-hidden">
+        <Blob bottom="-30%" left="50%"/>
+        <Blob top="-20%" left="50%"/>
+        <BackgroundBeams/>
         {/* <Blob top="10%" left="0%"/>
         <Blob top="10%" right="0%"/> */}
-        <FloatingText title='Builder' top="40%" left='10% ' delay="0.5s"/>
+        {/* <FloatingText title='Builder' top="40%" left='10% ' delay="0.5s"/>
         <FloatingText title='Innovator' top="30%" left='30% ' delay="1s"/>
         <FloatingText title='Visionary' top="30%" right='30% ' delay="1.5s"/>
-        <FloatingText title='Creator' top="40%" right='10% ' delay="2s"/>
+        <FloatingText title='Creator' top="40%" right='10% ' delay="2s"/> */}
         <Navbar/>
         <div className="space-y-10 w-full text-center uppercase py-8 px-4  ">
-          <h1 className="font-medium tracking-wide text-9xl text-transparent bg-clip-text bg-gradient-to-b from-teal-900 to-white">I am Kartik</h1>
-          <h2 className="font-[600] font-Oxanium text-7xl tracking-[0.3em] text-white">A Frontend Developer</h2>
+          <h1 className=" tracking-wide text-9xl text-white">I am Kartik</h1>
+          <h2 className="font-[400] font-Oxanium text-7xl tracking-[0.3em] text-white/60">A Frontend Developer</h2>
         </div>
       </header>
 
-      <div className="w-[100%] h-[2px] bg-teal-950/10 bg-gradient-to-r from-transparent via-white to-transparent via-50% from-20% to-80%"/>
+      <div className="w-[100%] h-[2px] bg-black bg-gradient-to-r from-transparent via-white to-transparent "/>
       
         {/* <TextHor/> */}
-      <section id="About" className="min-h-screen py-10 px-6  bg-teal-950/10 ">
-        <Title title="My Expertise"/>
-        
-        {/* <main className="sm:w-[60%] flex flex-col items-start  gap-20 z-10">
-          <h2 className="text-7xl mb-4 shadow-[0_0_15px_5px] shadow-secondary dark:shadow-primary text-primary-100 dark:text-secondary-100 rounded-2xl px-12 py-3 skew-x-6 dark:first-line:text-primary-100 first-line:text-secondary bg-transparent hover:bg-primary-100/5 dark:hover:bg-primary-100/30 hover:shadow-primary/30 dark:hover:shadow-secondary/30 transition-all duration-500 ">What <br/>I Do Best</h2>
-          <p className=" text-xl tracking-wider leading-normal px-4 py-3 text-primary dark:text-secondary border-l border-secondary dark:border-primary-100">I am a highly skilled and passionate web developer specializing in frontend development with expertise in Next.js, TypeScript, HTML, and TailwindCSS. My deep understanding of these technologies enables me to build responsive, performant, and visually appealing web applications. I am equally proficient in backend development, where I handle APIs and perform CRUD operations using MongoDB and PostgreSQL.</p>
-          
-          <a href="#Projects" className="relative mt-6 group animate-pulse text-primary dark:text-secondary-100 text-2xl  px-4 py-1 rounded-2xl border-x-2 border-main transition-all duration-200 delay-100 
-                              hover:px-6 hover:tracking-wide  hover:rounded-r-3xl hover:border-main 
-                              "
-            >
-              Recent Builds
-            <ArrowRight className="absolute right-0 top-1/2 -translate-y-1/2 scale-0  transition-all duration-300 text-primary dark:text-secondary-100 origin-left group-hover:scale-125 group-hover:-right-4"/>
-          </a>
+      <section id="About" className="relative  min-h-screen py-20 px-6 bg-black ">
+        <Title title="Services Provided"/>
+        <div className="mb-20 relative rounded-3xl bg-black/40 border border-white/10 overflow-hidden">
+          <div className="animate-pulse absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-primary-800 to-transparent "/>
+          <div className="animate-pulse absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-primary-800 to-transparent "/>
+          <TextHor/>
+        </div>
+        <Blob left="50%" top="50%"/>
+        <main className="relative grid grid-cols-2 gap-20 text-center *:bg-black/40 *:space-y-4 *:backdrop-blur-md *:p-6 *:rounded-3xl *:border *:border-white/10">
+          <div className="col-span-1  ">
+            <EvervaultCard className="h-[40vh] tracking-[0.1em]" text="DEVELOPMENT"/>
+            <p className="leading-relaxed text-white/70 tracking-wide font-light">Building robust, scalable, and efficient code tailored to meet modern web standards.
+            I specialize in creating seamless functionality and optimizing performance for a smooth user experience.
+            </p>
+          </div>
+          <div className="col-span-1">
+            <EvervaultCard className="h-[40vh] tracking-[0.1em]" text="DESIGN"/>
+            <p className="leading-relaxed text-white/70 tracking-wide font-light">Crafting visually compelling and intuitive interfaces that resonate with your audience.
+            I focus on delivering designs that are both aesthetically pleasing and user-centric.
+            </p>
+          </div>
         </main>
-        <div className="hidden sm:block w-[30%] h-[50vh] self-end rounded-2xl overflow-hidden z-0 opacity-60 dark:opacity-40 bg-cover relative origin-bottom-right scale-125 hover:scale-150 hover:opacity-50 transition-all duration-300 delay-100">
-          <Image
-            src={'/images/tech.jpg'}
-            alt="photo"
-            fill
-          />
-        </div> */}
       </section>
-      <section  className=" py-10 px-6 mt-16">
-      <h2 className="text-7xl mb-4 shadow-[0_0_15px_5px] shadow-secondary dark:shadow-primary text-primary-100 dark:text-secondary-100 rounded-2xl px-12 py-3 skew-x-6 inline-block dark:first-line:text-primary-100 first-line:text-secondary bg-transparent hover:bg-primary-100/5 dark:hover:bg-primary-100/30 hover:shadow-primary/30 dark:hover:shadow-secondary/30 transition-all duration-500 ">Techs <br/>Behind My Crafts</h2>
-      </section>
+      <div className="w-[100%] h-[2px] bg-black bg-gradient-to-r from-transparent via-white to-transparent "/>
+      
+      <section  className=" relative -z-10 py-20 px-6 bg-primary-800/5">
+        <Blob right="10%" top="30%"/>
+        <Blob left="20%" top="10%"/>
+        <Title title="My Skills"/>
         <Techs/>
         <Projects/>
+      </section>
       <div className="w-[100%] h-[2px] my-16 bg-gradient-to-r from-transparent via-secondary to-transparent via-50% from-20% to-80%"/>
 
        <main id='Contact' className="min-h-screen  py-10 px-6">

@@ -27,7 +27,7 @@ const MenuButton = () => {
   return (
     <>
         <div className='relative h-14 w-14 group z-20 cursor-pointer overflow-hidden
-                        *:absolute *:w-1 *:rounded-full  dark:*:bg-teal-100 *:transition-all *:duration-300 
+                        *:absolute *:w-1 *:rounded-full  dark:*:bg-primary-200 *:transition-all *:duration-300 
         '
         onClick={()=>setMenuOpen(prev=>!prev)}
         >
@@ -52,7 +52,7 @@ const MenuButton = () => {
                 return(
                     <a href={href} key={i}  onMouseEnter={()=>toggleImage(link)} onClick={()=>setMenuOpen(false)}
                       className='relative group opacity-50 py-1 px-6 transition-all duration-300 skew-x-12 skew-y-1 hover:opacity-100 hover:scale-125 z-20
-                                before:absolute before:right-0 before:top-0 before:h-full before:w-0 before:bg-teal-600 hover:before:right-auto hover:before:left-0 hover:before:w-full before:transition-all before:duration-500 before:-z-10
+                                before:absolute before:right-0 before:top-0 before:h-full before:w-0 before:bg-primary-600 hover:before:right-auto hover:before:left-0 hover:before:w-full before:transition-all before:duration-500 before:-z-10
                                 '
                       >{title}
                       <ExternalLink className='absolute top-0 right-0 origin-bottom-left opacity-0 scale-0 transition-all duration-500 -translate-x-1/2 translate-y-1/2 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100 group-hover:scale-150'/>

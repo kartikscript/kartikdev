@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React, { useRef } from 'react'
 import {motion, useScroll, useTransform} from 'framer-motion'
 import { ArrowDown } from 'lucide-react';
+import Blob from '../Blob';
 
 const Techs = () => {
 
@@ -103,6 +104,9 @@ const Techs = () => {
       })
     }
     </div>
+
+
+
   <div ref={imgRef} className='sm:h-[300vh] hidden sm:block'>
    <div className='sticky top-0 overflow-hidden h-screen '>
     {
@@ -117,7 +121,7 @@ const Techs = () => {
                 top: `${top}`,
                 left: `${left}`,
               }}
-              className='relative '
+              className='relative group'
             >
               <Image
                 className='object-cover '
@@ -133,11 +137,11 @@ const Techs = () => {
     }
     <motion.div  style={{scale:scale4}} transition={{duration:0.5, ease:'easeInOut'}} className='absolute top-0 left-0 size-full flex justify-center items-center'>
       <div className='relative size-full scale-[0.25] flex flex-col gap-8 items-center justify-center'>
-        <h1 className='text-6xl font-IBMBold tracking-wider text-primary-100 dark:text-secondary capitalize text-center px-8 rounded-3xl border-x-8 border-secondary dark:border-primary-100 leading-snug '>
-          Step in and explore<br/> my works using <br/>these tech stacks
+        <h1 className='text-6xl tracking-wider text-white dark:text-primary-100 font-light capitalize text-center px-8  rounded-3xl border-x-2 border-primary-500 dark:border-primary-500 leading-snug '>
+          Step in & explore<br/> my works 
         </h1>
-        <h1 className='text-secondary text-center dark:text-primary-100 text-8xl font-IBMBold '>Recent Projects</h1>
-        <ArrowDown className='text-secondary dark:text-primary-100 size-24 animate-bounce'/>
+        <h1 className=' text-center  dark:text-white text-7xl uppercase tracking-widest '>Recent Projects</h1>
+        <ArrowDown className='text-secondary dark:text-white size-24 animate-bounce'/>
       </div>
     </motion.div>
   </div>

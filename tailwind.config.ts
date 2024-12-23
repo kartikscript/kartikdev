@@ -1,4 +1,11 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require("tailwindcss/defaultTheme");
+ 
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+ 
 
 const config: Config = {
   content: [
@@ -11,14 +18,15 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        main:'#eb5e28',
         primary:{
-          DEFAULT:'#252422',
-          100:'#403d39'
-        },
-        secondary:{
-          DEFAULT:'#ccc5b9',
-          100:'#fffcf2'
+          100:'#e0aaff',
+          200:'#c77dff',
+          300:'#9d4edd',
+          400:'#7b2cbf',
+          500:'#5a189a',
+          600:'#3c096c',
+          700:'#240046',
+          800:'#10002b',
         },
       },
       fontFamily:{
@@ -63,11 +71,23 @@ const config: Config = {
         'erasing':'erasing 0.7s steps(30,end) forwards',
         'blob':'blob 7s infinite',
         'moving-background':'logoBg 5s infinite linear',
-        'hor-move':"moving 4s infinite linear"
+        'hor-move':"moving 20s infinite linear"
       }
     },
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
   darkMode:'class'
 };
+
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}
+
 export default config;

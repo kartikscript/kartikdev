@@ -4,9 +4,17 @@ const TextHor = () => {
 
   const texts=['Design','Development','UI/UX','API','Performance']
   return (
-    <div className='*:inline-block w-full h-16 py-4 whitespace-nowrap'>
-      <div className='animate-hor-move size-full bg-green-700'></div>
-      <div className='animate-hor-move size-full bg-red-700'></div>
+    <div className='*:inline-flex text-4xl *:py-6 font-Oxanium  whitespace-nowrap overflow-hidden'>
+      <div className='animate-hor-move flex justify-around items-center w-screen'>
+        {
+          texts.map((text,i)=>(<p key={i} className=''>{text}</p>))
+        }
+      </div>
+      <div className='animate-hor-move flex justify-around items-center w-screen'>
+        {
+          texts.map((text,i)=>(<p key={i}>{text}</p>))
+        }
+      </div>
     </div>
   )
 }
