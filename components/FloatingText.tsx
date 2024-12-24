@@ -12,7 +12,7 @@ const FloatingText = ({top,left,right,bottom,title,delay}:{delay?:string,title:s
       }}
       className='absolute text-xs font-bold animate-pulse bg-white/60 px-4 py-2 rounded-full uppercase tracking-widest text-primary-700 shadow-primary-700 shadow-[0px_0px_7px_3px] '
       >
-        {title}'s
+        {title}
       </div>
   )
 }

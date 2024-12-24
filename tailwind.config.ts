@@ -51,8 +51,7 @@ const config: Config = {
         },
         blob:{
           '0%':{transform:'translate(0,0)',scale:'1'},
-          '33%':{transform:'translate(50%,50%)',scale:'1.1'},
-          '66%':{transform:'translate(30%,-30%)',scale:'0.9'},
+          '50%':{transform:'translate(0%,10%)',scale:'0.9'},
           '100%':{transform:'translate(0,0)',scale:'1'},
         },
         logoBg:{
@@ -69,7 +68,7 @@ const config: Config = {
         'nav':'nav 0.5s linear ',
         'typing':'typing 0.7s steps(20,end)',
         'erasing':'erasing 0.7s steps(30,end) forwards',
-        'blob':'blob 7s infinite',
+        'blob':'blob 1.6s infinite',
         'moving-background':'logoBg 5s infinite linear',
         'hor-move':"moving 20s infinite linear"
       }

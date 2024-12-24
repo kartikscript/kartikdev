@@ -27,7 +27,7 @@ const MenuButton = () => {
   return (
     <>
         <div className='relative h-14 w-14 group z-20 cursor-pointer overflow-hidden
-                        *:absolute *:w-1 *:rounded-full  dark:*:bg-primary-200 *:transition-all *:duration-300 
+                        *:absolute *:w-1 *:rounded-full  dark:*:bg-primary-100/60 *:backdrop-blur-md *:transition-all *:duration-300 
         '
         onClick={()=>setMenuOpen(prev=>!prev)}
         >

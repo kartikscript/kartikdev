@@ -8,10 +8,10 @@ import { ArrowRight} from 'lucide-react'
 const Navbar = () => {
   return (
   <div className='fixed z-30 h-[10vh] top-0 w-full py-5'>
-    <div className='px-6 grid grid-cols-2 sm:grid-cols-3 '>
+    <div className='px-8 grid grid-cols-2 sm:grid-cols-3 '>
       <Name/>
       <nav 
-      className='*:w-[30px]  group hidden sm:justify-self-center sm:flex gap-16 items-center bg-black/80 dark:bg-transparent rounded-full ring-1 dark:ring-white/20 ring-primary-300/50 px-10 backdrop-blur-sm origin-bottom 
+      className='*:w-[30px]  group hidden sm:justify-self-center sm:flex gap-16 items-center bg-black/80 dark:bg-transparent rounded-3xl ring-1 dark:ring-white/20 ring-primary-300/50 px-10 backdrop-blur-sm origin-bottom 
             hover:scale-y-105 hover:shadow-primary-800 shadow-md transition-all duration-200 dark:hover:bg-gradient-to-b dark:hover:from-primary-800/60 dark:hover:to-primary-800/10'>
       {
           navLinks.map(({link,src},i)=>{
@@ -38,7 +38,7 @@ const Navbar = () => {
         }
       </nav>
       <div className='justify-self-end flex items-center gap-8'>
-        <button className='relative group flex gap-1 items-center top-0 mr-4 py-3 px-6 shadow-sm text-white font-Oxanium tracking-widest backdrop-blur-sm bg-gradient-to-tr from-primary-500/70 via-primary-700/70 to-primary-900/70 rounded-full
+        <button className='relative group flex gap-1 items-center top-0 mr-4 py-3 px-6 shadow-sm text-white font-Oxanium tracking-widest backdrop-blur-sm bg-gradient-to-tr from-primary-500/70 via-primary-700/70 to-primary-900/70 rounded-3xl
          hover:text-white hover:bg-primary-800/70 hover:-top-1 hover:shadow-lg hover:shadow-primary-800 transition-all '>
           Book Now
           <ArrowRight className='rotate-0 group-hover:-rotate-45 transition-all'/>

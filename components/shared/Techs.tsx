@@ -21,7 +21,7 @@ const Techs = () => {
     {
       src:'/images/html.png',
       scale:scale6,
-      top:'5%',
+      top:'10%',
       left:'17%',
       // width:'25vw',
       // height:'25vh'
@@ -29,56 +29,56 @@ const Techs = () => {
     {
       src:'/images/javascript.png',
       scale:scale7,
-      top:'-15%',
-      left:'18%',
+      top:'18%',
+      left:'7%',
       // width:'30vw',
       // height:'35vh'
     },
     {
       src:'/images/mongodb.png',
       scale:scale9,
-      top:'22%',
-      left:'7%',
+      top:'18%',
+      left:'-5%',
       // width:'23vw',
       // height:'50vh'
     },
     {
       src:'/images/nextjs.png',
       scale:scale6,
-      top:'-15%',
-      left:'-20%',
+      top:'10%',
+      left:'-18%',
       // width:'20vw',
       // height:'55vh'
     },
     {
       src:'/images/postgresql.png',
       scale:scale8,
-      top:'10%',
-      left:'-18%',
+      top:'-15%',
+      left:'-20%',
       // width:'15vw',
       // height:'35vh'
     },
     {
       src:'/images/tailwind.png',
       scale:scale6,
-      top:'20%',
-      left:'-5%',
+      top:'-23%',
+      left:'-7%',
       // width:'20vw',
       // height:'20vh'
     },
     {
       src:'/images/typescript.png',
       scale:scale8,
-      top:'-23%',
-      left:'-7%',
+      top:'-20%',
+      left:'7%',
       // width:'20vw',
       // height:'25vh'
     },
     {
       src:'/images/node-js.png',
       scale:scale6,
-      top:'-20%',
-      left:'7%',
+      top:'-15%',
+      left:'18%',
       // width:'20vw',
       // height:'25vh'
     },
@@ -108,7 +108,7 @@ const Techs = () => {
 
 
   <div ref={imgRef} className='sm:h-[300vh] hidden sm:block'>
-   <div className='sticky top-0 overflow-hidden h-screen '>
+   <div className='sticky  top-0 overflow-hidden h-screen '>
     {
       pics.map(({ left, top, scale, src,  }, i) => {
         // console.log(width, height, left, top);
@@ -124,7 +124,8 @@ const Techs = () => {
               className='relative group'
             >
               <Image
-                className='object-cover '
+                className={` object-cover animate-blob `}
+                style={{animationDelay:`${i*0.2}s`}}
                 src={src}
                 alt='logo'
                 width={100}
@@ -140,7 +141,6 @@ const Techs = () => {
         <h1 className='text-6xl tracking-wider text-white dark:text-primary-100 font-light capitalize text-center px-8  rounded-3xl border-x-2 border-primary-500 dark:border-primary-500 leading-snug '>
           Step in & explore<br/> my works 
         </h1>
-        <h1 className=' text-center  dark:text-white text-7xl uppercase tracking-widest '>Recent Projects</h1>
         <ArrowDown className='text-secondary dark:text-white size-24 animate-bounce'/>
       </div>
     </motion.div>

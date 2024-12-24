@@ -2,76 +2,68 @@
 import React, { useState } from 'react'
 import { projectInfos } from '@/constants/NavLinks'
 import Image from 'next/image'
-import { ExternalLink } from 'lucide-react'
+import { ArrowRight, ExternalLink } from 'lucide-react'
 import { twMerge } from 'tailwind-merge'
+import Title from '../Title'
+import Blob from '../Blob'
+import Link from 'next/link'
 
 
 const Projects = () => {
-  const [activeIndex, setActiveIndex] = useState(1)
+  const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   const projImages = ['/images/proj-1.png','/images/proj-2.png','/images/proj-3.png']
 
-  const changeProj = (id:number)=>{
+  const handleEnter = (id:number) =>{
       setActiveIndex(id)
   }
-  const currentProjInfo = projectInfos.find(item=>item.id===activeIndex)
-
+  const handleLeave = () =>{
+      setActiveIndex(null)
+  }
+  
   return (
- 
-     
-              <main id='Projects' className='min-h-screen overflow-hidden flex-col sm:flex-row flex gap-20 items-start sm:items-center justify-center '>
-                  <div className=' relative flex flex-col justify-center items-center w-[50%] h-[50vh] sm:h-screen  cursor-pointer  *:transition-all *:duration-700 
-                                  before:z-20 before:absolute before:w-full before:h-[10%] before:inset-0 before:bg-gradient-to-t before:from-transparent before:to-secondary-100 dark:before:to-black before:from-10% 
-                                  after:z-20 after:absolute after:w-full after:h-[10%] after:bottom-0 after:bg-gradient-to-b after:from-transparent after:to-secondary-100 dark:after:to-black after:from-10% 
-                                  '
-                  >
-                    {
-                      projImages.map((imageSrc,i)=>{
-                        const activeImage = activeIndex === i
-                        const prevImage = activeIndex > i
-                        const nextImage = activeIndex < i 
-                        const lastImage = activeIndex===(projImages.length - 1) && i===0 //active index =2  that is last pic clicked and have to make changes for first image that is i=0 
-                        const firstImage =  activeIndex + i=== 2//only set for firstImage click to do something for lastImage
-                        let position;
-                        if(activeImage) position='scale-125 z-20 ring-1 ring-primary-100 shadow-[0_0_20px_1px] shadow-secondary-100 dark:opacity-100 opacity-100 '
-                        else if(prevImage) position='-translate-y-full'
-                        else if(nextImage) position='translate-y-full'
-                        if(prevImage && lastImage) position='translate-y-full'//suppose if last image clicked (active Index =2) then we want first to take its place and rest will have same behaviour prevImage true for both i=0 &1 so only we want changes in i=0
-                        if(nextImage && firstImage) position='-translate-y-full'
-                        return(
-                            <Image
-                              key={i}
-                              className={twMerge(`opacity-70 dark:opacity-30 z-10 absolute left-0  translate-x-[50%] rounded-3xl  bg-contain  transition-all duration-300 delay-100 `,
-                                position
-                              )}
-                              src={imageSrc}
-                              alt={'web image'}
-                              width={400}
-                              height={450}
-                              onClick={()=>changeProj(i)}
-                            />
-                        )
-                      })
-                    }
-                  
-                      
+      <div id='projects' className='relative min-h-screen px-6'>
+        <Title title='Project Gallery'/>
+        <Blob left='20%' top='10%'/>
+        <Blob right='-10%' top='60%'/>
+        <main className='relative z-10 grid grid-cols-3 gap-12 *:rounded-3xl *:border *:border-white/70'>
+          {
+            projectInfos.map(({id,description,img,link,title})=>{
+              let isBlur;
+              if(activeIndex){
+                isBlur = activeIndex !== id
+              }
+              return(
+                <a key={id} target='_blank' onMouseLeave={handleLeave}  onMouseEnter={()=>handleEnter(id)} href={link} className={`${activeIndex&&(isBlur ? 'blur-sm scale-95 opacity-40':'scale-105 opacity-100 shadow-xl')} shadow-lg group opacity-80 transition-all duration-500  shadow-primary-800/50 pb-10 text-center p-2 bg-black/60`}>
+                  <div className='w-full mb-8 relative overflow-hidden rounded-2xl border border-white/40 shadow-primary-400/20 shadow-[0_0_13px_5px] '>
+                    <Image
+                    src={img}
+                    alt='project image'
+                    width={500}
+                    height={500}
+                    className=' aspect-video object-fill '
+                    />
+                    <div className='opacity-0 group-hover:opacity-100 transition-all duration-500 absolute size-full inset-0 flex items-center justify-center bg-black/80'>
+                      <ExternalLink className='size-12 scale-50 group-hover:scale-100 transition-all duration-500'/>
+                    </div>
                   </div>
-
-                  {/* <div className='z-10 flex flex-col gap-1 items-center justify-center text-secondary-100 transition-all duration-300 delay-200 opacity-0 peer-hover:opacity-100'>
-                    <ExternalLink className='size-10 '/>
-                    <p className='text-sm '>Explore The Project</p>
-                  </div> */}
-             
-                <div className=' sm:w-[40%] flex flex-col gap-8 justify-start'>
-                  <h2 className='text-7xl font-IBMBold text-secondary dark:text-primary-100'>Project Overview</h2>
-                  <h3 className='relative text-5xl mt-6 font-IBMBold text-primary dark:text-secondary-100 flex items-end gap-6'>{currentProjInfo?.title} <a target='_blank' href={currentProjInfo?.link}><ExternalLink className='size-8'/></a></h3>
-                  <p className=' px-4 py-3 text-primary-100 dark:text-secondary border-l border-secondary dark:border-primary-100'>{currentProjInfo?.description}</p>
-                </div>
-                
-              
-              </main>
-      
-             
+                  <h2 className='mb-4 font-Oxanium text-2xl tracking-widest font-medium uppercase border-b-[1px] text-primary-100 border-white/40 px-3 inline-block'>{title}</h2>
+                  <p className='text-white/60 font-light text-sm tracking-wider leading-relaxed'>{description}</p>
+                </a>
+              )
+            })
+          }
+          <Link 
+            href={'/projects'} 
+            id={(projectInfos.length+1).toString()} onMouseLeave={handleLeave}  onMouseEnter={()=>handleEnter(projectInfos.length+1)} className={`${activeIndex&&((activeIndex !== projectInfos.length+1) ? 'blur-sm scale-95 opacity-40':'scale-105 opacity-100 shadow-xl')} hover:text-primary-300 shadow-lg group opacity-80 transition-all duration-500  shadow-primary-800/50 flex items-center justify-center  p-2 bg-black/60`}
+          >
+              <h2 className='underline text-3xl flex gap-2 items-center'>
+                See All Projects
+                <ArrowRight className='rotate-0 size-8 group-hover:-rotate-45 transition-transform duration-500'/>
+              </h2>
+          </Link>
+        </main>
+      </div>   
   )
 }
 
