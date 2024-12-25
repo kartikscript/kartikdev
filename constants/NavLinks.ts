@@ -1,3 +1,4 @@
+import { title } from "process"
 
 export const navLinks =[
   {src:'/icons/twitter.svg',
@@ -33,6 +34,11 @@ export const MenuLinks =[
     link:'/images/contact.jpg',
     href:"#Contact"
   },
+  {
+    title:'Book Now',
+    link:'/images/tech.jpg',
+    href:'mailto:suk.m4hh@gmail.com',
+  }
 ]
 
 export const projectInfos=[
@@ -72,4 +78,10 @@ export const projectInfos=[
     
     link:'https://better-alpha-three.vercel.app/',
   },
+]
+
+const otherProjects =[
+  {
+    
+  }
 ]

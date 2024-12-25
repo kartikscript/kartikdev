@@ -4,10 +4,13 @@ import React, { useRef } from 'react'
 import {motion, useScroll, useTransform} from 'framer-motion'
 import { ArrowDown } from 'lucide-react';
 import Blob from '../Blob';
+import FloatingText from '../FloatingText';
 
 const Techs = () => {
 
   const imgRef = useRef<HTMLDivElement|null>(null)
+
+  const texts=['HTML5','CSS3','JavaScript','Tailwind CSS','MongoDB','TypeScript','NextJS','PostgreSQL']
 
   const {scrollYProgress} = useScroll({
     target:imgRef
@@ -85,23 +88,11 @@ const Techs = () => {
   ]
   return (
     <>
-    <div className='sm:hidden w-full grid gap-4 place-items-center grid-cols-[1fr_1fr]'>
+    <div className='sm:hidden w-full *:inline-block *:mx-4 *:my-2 mb-10'>
     {
-      pics.map(({ src }, i) => {
-        // console.log(width, height, left, top);
-        return (
-          <div key={i} className='size-full flex justify-center '>
-            
-              <Image
-                className='object-cover '
-                src={src}
-                alt='logo'
-                width={100}
-                height={100}
-              />
-          </div>
-        );
-      })
+      texts.map((text,i)=>(
+         <FloatingText delay={`${i*0.2}s`} key={i} title={text}/>
+      ))
     }
     </div>
 
@@ -138,10 +129,10 @@ const Techs = () => {
     }
     <motion.div  style={{scale:scale4}} transition={{duration:0.5, ease:'easeInOut'}} className='absolute top-0 left-0 size-full flex justify-center items-center'>
       <div className='relative size-full scale-[0.25] flex flex-col gap-8 items-center justify-center'>
-        <h1 className='text-6xl tracking-wider text-white dark:text-primary-100 font-light capitalize text-center px-8  rounded-3xl border-x-2 border-primary-500 dark:border-primary-500 leading-snug '>
+        <h1 className='text-6xl tracking-wider text-primary-800 dark:text-primary-100 font-medium dark:font-light capitalize text-center px-8  rounded-3xl border-x-2 border-primary-500 dark:border-primary-500 leading-snug '>
           Step in & explore<br/> my works 
         </h1>
-        <ArrowDown className='text-secondary dark:text-white size-24 animate-bounce'/>
+        <ArrowDown className='text-secondary text-black dark:text-white size-24 animate-bounce'/>
       </div>
     </motion.div>
   </div>

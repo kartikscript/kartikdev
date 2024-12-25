@@ -26,8 +26,8 @@ const MenuButton = () => {
 
   return (
     <>
-        <div className='relative h-14 w-14 group z-20 cursor-pointer overflow-hidden
-                        *:absolute *:w-1 *:rounded-full  dark:*:bg-primary-100/60 *:backdrop-blur-md *:transition-all *:duration-300 
+        <div className='relative size-14  group z-20 cursor-pointer overflow-hidden
+                        *:absolute *:w-1 *:rounded-full *:bg-primary-500/80  dark:*:bg-primary-100 *:backdrop-blur-md *:transition-all *:duration-300 
         '
         onClick={()=>setMenuOpen(prev=>!prev)}
         >
@@ -46,7 +46,7 @@ const MenuButton = () => {
             )}/>
         </div> 
         <section className={`fixed top-0 bg-black h-full ${menuOpen?"w-full right-0":"w-[0%] left-0 "} overflow-hidden transition-all duration-700 `}>
-          <main  className='relative  size-full text-7xl text-amber-100 flex flex-col justify-center items-center gap-8'>
+          <main  className='relative  size-full text-7xl text-white flex flex-col justify-center items-center gap-8'>
             {
               MenuLinks.map(({title,link,href},i)=>{
                 return(

@@ -14,7 +14,6 @@ const Name = () => {
 
       const totalScroll = docHeight - windowHeight; // Total scrollable area
       const scrollPosition = (scrollTop / totalScroll) * 100; // Percentage of how much has been scrolled
-      console.log(scrollPosition)
       if(scrollPosition>0.3 && !isAnimating){
           setIsAnimating(true)
       }
@@ -33,9 +32,9 @@ const Name = () => {
 
 
   return (
-    <div className='relative z-30 w-fit flex items-baseline text-6xl text-white font-Oxanium whitespace-nowrap '>
+    <div className='self-center relative z-30 w-fit flex items-baseline text-4xl sm:text-6xl text-white font-Oxanium whitespace-nowrap '>
         <h1 className='font-[400] text-primary-500 dark:text-primary-200 '>K</h1>
-        <h1 className={` text-4xl flex gap-1 font-[300] overflow-hidden ${isAnimating?"animate-erasing":"animate-typing"}`}>artik.<span className=' font-light'>Script</span></h1>
+        <h1 className={` text-3xl sm:text-4xl flex gap-1 font-[300] overflow-hidden ${isAnimating?"animate-erasing":"animate-typing"}`}>artik.<span className=' font-light'>Script</span></h1>
    </div>
   )
 }

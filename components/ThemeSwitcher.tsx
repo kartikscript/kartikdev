@@ -26,7 +26,7 @@ const ThemeSwitcher = () => {
       ) : (
         <Moon
           onClick={() => setTheme("dark")}
-          className="size-7 cursor-pointer text-cyan-400 hover:animate-pulse"
+          className="size-7 cursor-pointer text-primary-500 hover:animate-pulse"
         />
       )}
     </div>
