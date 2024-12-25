@@ -20,7 +20,7 @@ const Projects = () => {
   
   return (
       <div id='Projects' className='relative min-h-screen px-6'>
-        <Title title='Project Gallery'/>
+        <Title title='Project Highlights'/>
         <Blob left='20%' top='10%'/>
         <Blob right='50%' top='60%'/>
         <main className='relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-12 *:rounded-3xl *:border *:border-white/70'>
@@ -54,7 +54,7 @@ const Projects = () => {
             href={'/projects'} 
             id={(projectInfos.length+1).toString()} onMouseLeave={handleLeave}  onMouseEnter={()=>handleEnter(projectInfos.length+1)} className={`${activeIndex&&((activeIndex !== projectInfos.length+1) ? 'blur-sm scale-95 opacity-40':'scale-105 opacity-100 shadow-xl')} hover:text-primary-300 shadow-lg group opacity-80  transition-all duration-500  shadow-primary-800/50 flex items-center justify-center  p-10 whitespace-nowrap bg-primary-800 dark:bg-black/60`}
           >
-              <h2 className='underline text-3xl flex gap-2 items-center'>
+              <h2 className='underline text-3xl font-Oxanium flex gap-2 items-center'>
                 See All Projects
                 <ArrowRight className='rotate-0 size-8 group-hover:-rotate-45 transition-transform duration-500'/>
               </h2>

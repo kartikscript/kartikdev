@@ -80,8 +80,28 @@ export const projectInfos=[
   },
 ]
 
-const otherProjects =[
+
+
+export const otherProjects = [
   {
-    
-  }
-]
+    id: 99,
+    img: '/images/animex.png',
+    title: 'Animex',
+    description: 'A visually stunning frontend layout showcasing smooth animations and dynamic designs. Created to inspire modern design practices with an engaging user interface.',
+    link: 'https://animex-red.vercel.app/',
+  },
+  {
+    id: 98,
+    img: '/images/socio.png',
+    title: 'Socio',
+    description: 'A conceptual frontend design project focused on creating an interactive and visually appealing layout for social networking platforms. A blend of creativity and functionality.',
+    link: 'https://socio-ten.vercel.app/',
+  },
+  {
+    id: 7,
+    img: '/images/edweb.png',
+    title: 'EduWEB',
+    description: 'A sleek and modern frontend layout designed for school websites. Features a clean interface to showcase essential information and enhance user engagement.',
+    link: 'https://educonnect-frontend.vercel.app/',
+  },
+];
