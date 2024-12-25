@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import { projectInfos } from '@/constants/NavLinks'
 import Image from 'next/image'
 import { ArrowRight, ExternalLink } from 'lucide-react'
-import { twMerge } from 'tailwind-merge'
 import Title from '../Title'
 import Blob from '../Blob'
 import Link from 'next/link'
@@ -11,8 +10,6 @@ import Link from 'next/link'
 
 const Projects = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
-
-  const projImages = ['/images/proj-1.png','/images/proj-2.png','/images/proj-3.png']
 
   const handleEnter = (id:number) =>{
       setActiveIndex(id)

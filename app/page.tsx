@@ -1,5 +1,4 @@
 import Blob from "@/components/Blob";
-import FloatingText from "@/components/FloatingText";
 import Navbar from "@/components/shared/Navbar";
 import Projects from "@/components/shared/Projects";
 import Techs from "@/components/shared/Techs";
