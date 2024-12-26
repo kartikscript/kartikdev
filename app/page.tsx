@@ -85,7 +85,7 @@ export default function Home() {
                 alt="connect"
                 width={200}
                 height={300}
-                className="w-48"
+                className="w-48 z-10"
               />
               <Blob left="50%" top="50%"/>
             </div>

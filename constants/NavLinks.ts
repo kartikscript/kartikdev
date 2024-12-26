@@ -102,6 +102,6 @@ export const otherProjects = [
     img: '/images/edweb.png',
     title: 'EduWEB',
     description: 'A sleek and modern frontend layout designed for school websites. Features a clean interface to showcase essential information and enhance user engagement.',
-    link: 'https://educonnect-frontend.vercel.app/',
+    link: 'https://vishalbhartischool.vercel.app/',
   },
 ];
