@@ -10,7 +10,7 @@ const Blob = ({top,left,right,bottom}:{top?:string,left?:string,right?:string,bo
       bottom: bottom || "auto",
 
     }}
-    className={`absolute z-0 shadow-primary-400 dark:shadow-primary-700 shadow-[0_0_300px_100px] scale-150 animate-pulse `}/>
+    className={`absolute z-0 shadow-primary-400 dark:shadow-primary-700 shadow-[0_0_300px_100px] sm:scale-150 animate-pulse `}/>
   )
 }
 

@@ -68,7 +68,7 @@ export const projectInfos=[
     img:'/images/healthcare.png',
     title:'Healthcare',
     description:'A healthcare app enabling users to register their details and book appointments with doctors.Doctors have access to an admin panel to manage appointments and patient details efficiently.',
-    link:'https://https://healthcare-khaki.vercel.app/',
+    link:'https://healthcare-khaki.vercel.app/',
   },
   {
     id:5,
