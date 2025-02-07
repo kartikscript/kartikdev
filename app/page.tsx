@@ -30,12 +30,12 @@ export default function Home() {
       <div className="w-[100%] h-[2px] bg-black bg-gradient-to-r from-transparent via-white to-transparent "/>
       
         {/* <TextHor/> */}
-      <section id="About" className="relative  min-h-screen py-20 px-6 bg-primary-100/30 dark:bg-black ">
+      <section id="About" className="relative  min-h-screen py-20 px-6 bg-primary-100/70 dark:bg-black ">
         <Title title="Services Provided"/>
         <Reveal>
           <div className="mb-20 relative rounded-3xl bg-white/40 dark:bg-black/40 border border-white/10 overflow-hidden">
-            <div className="animate-pulse z-10 absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-primary-200 dark:from-primary-800 to-transparent "/>
-            <div className="animate-pulse z-10 absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-primary-200 dark:from-primary-800 to-transparent "/>
+            <div className="animate-pulse z-10 absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-primary-100 dark:from-primary-800 to-transparent "/>
+            <div className="animate-pulse z-10 absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-primary-100 dark:from-primary-800 to-transparent "/>
             <TextHor/>
           </div>
         </Reveal>

@@ -26,7 +26,7 @@ const MenuButton = () => {
 
   return (
     <>
-        <div className='relative size-12  group z-20 cursor-pointer overflow-hidden
+        <div className='relative size-10 sm:size-14  group z-20 cursor-pointer overflow-hidden
                         *:absolute *:w-1 *:rounded-full *:bg-primary-500/80  dark:*:bg-primary-100 *:backdrop-blur-md *:transition-all *:duration-300 
         '
         onClick={()=>setMenuOpen(prev=>!prev)}
@@ -37,7 +37,7 @@ const MenuButton = () => {
             )}/>
 
           <div className={twMerge(
-            `left-1/2 bottom-0 h-[60%] ${menuOpen || 'group-hover:-translate-y-[22.4px]'}`,
+            `left-1/2 bottom-0 h-[60%] ${menuOpen || 'sm:group-hover:-translate-y-[22.4px] group-hover:-translate-y-[16px]'}`,
             menuOpen && ' h-[80%] left-0 origin-bottom-right  rotate-45'
             )}/>
           <div className={twMerge(
