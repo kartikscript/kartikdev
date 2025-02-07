@@ -30,21 +30,21 @@ export default function Home() {
       <div className="w-[100%] h-[2px] bg-black bg-gradient-to-r from-transparent via-white to-transparent "/>
       
         {/* <TextHor/> */}
-      <section id="About" className="relative  min-h-screen py-20 px-6 bg-primary-300/60 dark:bg-black ">
+      <section id="About" className="relative  min-h-screen py-20 px-6 bg-primary-100/30 dark:bg-black ">
         <Title title="Services Provided"/>
         <Reveal>
-          <div className="mb-20 relative rounded-3xl bg-primary-400 dark:bg-black/40 border border-white/10 overflow-hidden">
-            <div className="animate-pulse z-10 absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-purple-100/30 dark:from-primary-800 to-transparent "/>
-            <div className="animate-pulse z-10 absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-purple-100/30 dark:from-primary-800 to-transparent "/>
+          <div className="mb-20 relative rounded-3xl bg-white/40 dark:bg-black/40 border border-white/10 overflow-hidden">
+            <div className="animate-pulse z-10 absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-primary-200 dark:from-primary-800 to-transparent "/>
+            <div className="animate-pulse z-10 absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-primary-200 dark:from-primary-800 to-transparent "/>
             <TextHor/>
           </div>
         </Reveal>
         <Blob left="50%" top="50%"/>
-        <main className="relative grid grid-cols-1 md:grid-cols-2 gap-20 text-center *:bg-primary-700 dark:*:bg-black/40 *:space-y-4 *:backdrop-blur-md *:p-6 *:rounded-3xl *:border *:border-white/10">
+        <main className="relative grid grid-cols-1 md:grid-cols-2 gap-20 text-center *:bg-white/40 dark:*:bg-black/40 *:space-y-4 *:backdrop-blur-md *:p-6 *:rounded-3xl *:border *:border-white/10">
         <Reveal>
           <div >
             <EvervaultCard className="h-[20vh] sm:h-[40vh] tracking-[0.1em] font-Oxanium" text="DEVELOPMENT"/>
-            <p className="leading-relaxed text-primary-100/80 dark:text-white/70  tracking-wide font-semibold dark:font-light">Building robust, scalable, and efficient code tailored to meet modern web standards.
+            <p className="leading-relaxed text-gray-800 dark:text-white/70  tracking-wide font-semibold dark:font-light">Building robust, scalable, and efficient code tailored to meet modern web standards.
             I specialize in creating seamless functionality and optimizing performance for a smooth user experience.
             </p>
           </div>
@@ -52,7 +52,7 @@ export default function Home() {
         <Reveal>
           <div >
             <EvervaultCard className="h-[20vh] sm:h-[40vh] tracking-[0.1em] font-Oxanium" text="DESIGN"/>
-            <p className="leading-relaxed text-primary-100/80 dark:text-white/70  tracking-wide font-semibold dark:font-light">Crafting visually compelling and intuitive interfaces that resonate with your audience.
+            <p className="leading-relaxed text-gray-800 dark:text-white/70  tracking-wide font-semibold dark:font-light">Crafting visually compelling and intuitive interfaces that resonate with your audience.
             I focus on delivering designs that are both aesthetically pleasing and user-centric.
             </p>
           </div>
@@ -62,7 +62,7 @@ export default function Home() {
       </section>
       <div className="w-[100%] h-[2px] bg-black bg-gradient-to-r from-transparent via-white to-transparent "/>
       
-      <section  className=" relative z-0 py-20 bg-primary-100/70  dark:bg-primary-800/5">
+      <section  className=" relative z-0 py-20 bg-primary-100/5  dark:bg-primary-800/5">
         <Blob right="10%" top="30%"/>
         <Blob left="20%" top="10%"/>
         <Title title="Key Skills"/>
@@ -79,7 +79,7 @@ export default function Home() {
           <Title title="Let's Connect"/>
           <div className="flex flex-col items-center gap-8">
             <Reveal>
-             <h1 className="text-5xl text-center font-Oxanium tracking-wide dark:text-white text-primary-800 font-[600] dark:font-[500]">Got a project in mind? Let&apos;s talk!</h1>
+             <h1 className="text-5xl text-center font-Oxanium tracking-wide dark:text-white text-primary-600 font-[600] dark:font-[500]">Got a project in mind? Let&apos;s talk!</h1>
 
             </Reveal>
             <Reveal>

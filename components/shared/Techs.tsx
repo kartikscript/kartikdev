@@ -128,10 +128,10 @@ const Techs = () => {
     }
     <motion.div  style={{scale:scale4}} transition={{duration:0.5, ease:'easeInOut'}} className='absolute top-0 left-0 size-full flex justify-center items-center'>
       <div className='relative size-full scale-[0.25] flex flex-col gap-8 items-center justify-center'>
-        <h1 className='text-6xl tracking-wider text-primary-800 dark:text-primary-100 font-medium dark:font-light capitalize text-center px-8  rounded-3xl border-x-2 border-primary-500 dark:border-primary-500 leading-snug '>
+        <h1 className='text-6xl tracking-wider text-primary-600 dark:text-primary-100 font-medium dark:font-light capitalize text-center px-8  rounded-3xl border-x-2 border-primary-500 dark:border-primary-500 leading-snug '>
           Step in & explore<br/> my works 
         </h1>
-        <ArrowDown className='text-secondary text-black dark:text-white size-24 animate-bounce'/>
+        <ArrowDown className='text-secondary text-gray-700 dark:text-white size-24 animate-bounce'/>
       </div>
     </motion.div>
   </div>

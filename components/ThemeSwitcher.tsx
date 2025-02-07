@@ -19,14 +19,14 @@ const ThemeSwitcher = () => {
     <div className="flex items-center">
       {/* Toggle based on current theme */}
       {theme === "dark" ? (
-        <Sun
+        <Moon
           onClick={() => setTheme("light")}
-          className="size-7 cursor-pointer text-amber-400 hover:rotate-180 transition-all duration-500"
+          className="size-7 cursor-pointer text-primary-500 hover:animate-pulse transition-all duration-500"
         />
       ) : (
-        <Moon
+        <Sun
           onClick={() => setTheme("dark")}
-          className="size-7 cursor-pointer text-primary-500 hover:animate-pulse"
+          className="size-7 cursor-pointer text-amber-400 hover:rotate-180"
         />
       )}
     </div>
