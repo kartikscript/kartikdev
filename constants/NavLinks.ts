@@ -72,11 +72,10 @@ export const projectInfos=[
   },
   {
     id:5,
-    img:'/images/better.png',
-    title:'Better',
-    description:'A modern frontend layout designed with HTML and Tailwind CSS, focusing on clean visuals and responsive design.It highlights creativity in frontend development through visually appealing and user-friendly patterns.',
-    
-    link:'https://better-alpha-three.vercel.app/',
+    img:'/images/instakart.png',
+    title:'Instakart',
+    description:'Instakart is a feature-rich e-commerce platform that simulates a real-world shopping experience using dummy APIs.',
+    link:'https://instakart.vercel.app/',
   },
 ]
 
@@ -103,5 +102,13 @@ export const otherProjects = [
     title: 'EduWEB',
     description: 'A sleek and modern frontend layout designed for school websites. Features a clean interface to showcase essential information and enhance user engagement.',
     link: 'https://vishalbhartischool.vercel.app/',
+  },
+  {
+    id:95,
+    img:'/images/better.png',
+    title:'Better',
+    description:'A modern frontend layout designed with HTML and Tailwind CSS, focusing on clean visuals and responsive design.It highlights creativity in frontend development through visually appealing and user-friendly patterns.',
+    
+    link:'https://better-alpha-three.vercel.app/',
   },
 ];
