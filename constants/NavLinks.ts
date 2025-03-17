@@ -97,6 +97,13 @@ export const otherProjects = [
     link: 'https://socio-ten.vercel.app/',
   },
   {
+    id: 97,
+    img: '/images/funds-connect.png',
+    title: 'Funds-Connect',
+    description: 'A modern and visually appealing frontend layout designed for a finance management platform. It features a clean and user-friendly interface to enhance user experience.',
+    link: 'https://funds-connect.vercel.app/',
+  },
+  {
     id: 7,
     img: '/images/edweb.png',
     title: 'EduWEB',
