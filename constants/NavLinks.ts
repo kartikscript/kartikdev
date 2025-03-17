@@ -50,18 +50,18 @@ export const projectInfos=[
     link:'https://moonex-one.vercel.app/',
   },
   {
-    id:2,
+    id: 2,
+    img: '/images/funds-connect.png',
+    title: 'Funds-Connect',
+    description: 'A modern and visually appealing frontend layout designed for a finance management platform. It features a clean and user-friendly interface to enhance user experience.',
+    link: 'https://funds-connect.vercel.app/',
+  },
+  {
+    id:3,
     img:'/images/proj-1.png',
     title:'Make-Resume',
     description:'A dynamic web application designed to help users craft professional resumes with ease. It offers a clean interface for creating and customizing resumes, enabling users to preview and download their work in PDF format.',
     link:'https://makeresume-ecru.vercel.app/',
-  },
-  {
-    id:3,
-    img:'/images/proj-2.png',
-    title:'Work-Manager',
-    description:'An intuitive tool built to manage tasks and workflow efficiently. It allows users to create, track, and organize their daily tasks or projects, ensuring productivity.',
-    link:'https://work-manager-lake.vercel.app/',
   },
   {
     id:4,
@@ -97,11 +97,11 @@ export const otherProjects = [
     link: 'https://socio-ten.vercel.app/',
   },
   {
-    id: 97,
-    img: '/images/funds-connect.png',
-    title: 'Funds-Connect',
-    description: 'A modern and visually appealing frontend layout designed for a finance management platform. It features a clean and user-friendly interface to enhance user experience.',
-    link: 'https://funds-connect.vercel.app/',
+    id:97,
+    img:'/images/proj-2.png',
+    title:'Work-Manager',
+    description:'An intuitive tool built to manage tasks and workflow efficiently. It allows users to create, track, and organize their daily tasks or projects, ensuring productivity.',
+    link:'https://work-manager-lake.vercel.app/',
   },
   {
     id: 7,
