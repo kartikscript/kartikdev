@@ -83,11 +83,18 @@ export const projectInfos=[
 
 export const otherProjects = [
   {
-    id: 99,
-    img: '/images/animex.png',
-    title: 'Animex',
-    description: 'A visually stunning frontend layout showcasing smooth animations and dynamic designs. Created to inspire modern design practices with an engaging user interface.',
-    link: 'https://animex-red.vercel.app/',
+    id:97,
+    img:'/images/proj-2.png',
+    title:'Work-Manager',
+    description:'An intuitive tool built to manage tasks and workflow efficiently. It allows users to create, track, and organize their daily tasks or projects, ensuring productivity.',
+    link:'https://work-manager-lake.vercel.app/',
+  },
+  {
+    id:94,
+    img:'/images/insta.png',
+    title:'Insta-Home',
+    description:'A replica of the Instagram homepage, designed to showcase frontend development skills and creativity. It features a clean and visually appealing layout, highlighting modern design trends.',
+    link:'https://insta-home-ten.vercel.app/',
   },
   {
     id: 98,
@@ -97,18 +104,11 @@ export const otherProjects = [
     link: 'https://socio-ten.vercel.app/',
   },
   {
-    id:97,
-    img:'/images/proj-2.png',
-    title:'Work-Manager',
-    description:'An intuitive tool built to manage tasks and workflow efficiently. It allows users to create, track, and organize their daily tasks or projects, ensuring productivity.',
-    link:'https://work-manager-lake.vercel.app/',
-  },
-  {
-    id: 7,
-    img: '/images/edweb.png',
-    title: 'EduWEB',
-    description: 'A sleek and modern frontend layout designed for school websites. Features a clean interface to showcase essential information and enhance user engagement.',
-    link: 'https://vishalbhartischool.vercel.app/',
+    id:93,
+    img:'/images/e-store.png',
+    title:'e-store',
+    description:'A simple e-store layout frontend page',
+    link:'https://e-store-five-lake.vercel.app/',
   },
   {
     id:95,
@@ -117,5 +117,19 @@ export const otherProjects = [
     description:'A modern frontend layout designed with HTML and Tailwind CSS, focusing on clean visuals and responsive design.It highlights creativity in frontend development through visually appealing and user-friendly patterns.',
     
     link:'https://better-alpha-three.vercel.app/',
+  },
+  {
+    id: 99,
+    img: '/images/animex.png',
+    title: 'Animex',
+    description: 'A visually stunning frontend layout showcasing smooth animations and dynamic designs. Created to inspire modern design practices with an engaging user interface.',
+    link: 'https://animex-red.vercel.app/',
+  },
+  {
+    id: 7,
+    img: '/images/edweb.png',
+    title: 'EduWEB',
+    description: 'A sleek and modern frontend layout designed for school websites. Features a clean interface to showcase essential information and enhance user engagement.',
+    link: 'https://vishalbhartischool.vercel.app/',
   },
 ];
