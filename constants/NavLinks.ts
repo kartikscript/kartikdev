@@ -35,7 +35,7 @@ export const MenuLinks =[
     href:"#Contact"
   },
   {
-    title:'Book Now',
+    title:'Ask for Resume',
     link:'/images/tech.jpg',
     href:'mailto:suk.m4hh@gmail.com',
   }
@@ -44,44 +44,51 @@ export const MenuLinks =[
 export const projectInfos=[
   {
     id:1,
+    img:'/images/x1.png',
+    title:'Book Scan AI',
+    description:'This app lets you quickly get the context of any book just by scanning its cover page. It can be very useful for students, avid readers, and book explorers.',
+    link:'https://my-book-scanner.vercel.app/',
+  },
+  {
+    id:2,
     img:'/images/moonex.png',
     title:'Moonex',
     description:'A creative exploration of frontend design, showcasing visually engaging layouts and modern UI patterns. This project demonstrates a blend of sleek aesthetics and smooth user interactions, designed to inspire and delight users with a seamless interface.',
     link:'https://moonex-one.vercel.app/',
   },
   {
-    id: 2,
+    id: 3,
     img: '/images/funds-connect.png',
     title: 'Funds-Connect',
     description: 'A modern and visually appealing frontend layout designed for a finance management platform. It features a clean and user-friendly interface to enhance user experience.',
     link: 'https://funds-connect.vercel.app/',
   },
   {
-    id:3,
+    id:4,
     img:'/images/proj-1.png',
     title:'Make-Resume',
     description:'A dynamic web application designed to help users craft professional resumes with ease. It offers a clean interface for creating and customizing resumes, enabling users to preview and download their work in PDF format.',
     link:'https://makeresume-ecru.vercel.app/',
   },
   {
-    id:4,
+    id:5,
     img:'/images/healthcare.png',
     title:'Healthcare',
     description:'A healthcare app enabling users to register their details and book appointments with doctors.Doctors have access to an admin panel to manage appointments and patient details efficiently.',
     link:'https://healthcare-khaki.vercel.app/',
-  },
-  {
-    id:5,
-    img:'/images/instakart.png',
-    title:'Instakart',
-    description:'Instakart is a feature-rich e-commerce platform that simulates a real-world shopping experience using dummy APIs.',
-    link:'https://instakart.vercel.app/',
   },
 ]
 
 
 
 export const otherProjects = [
+  {
+    id:96,
+    img:'/images/instakart.png',
+    title:'Instakart',
+    description:'Instakart is a feature-rich e-commerce platform that simulates a real-world shopping experience using dummy APIs.',
+    link:'https://instakart.vercel.app/',
+  },
   {
     id:97,
     img:'/images/proj-2.png',

@@ -1,7 +1,6 @@
 import { navLinks } from '@/constants/NavLinks'
 import MenuButton from '../MenuButton'
 import Name from '../Name'
-import ThemeSwitcher from '../ThemeSwitcher'
 import Image from 'next/image'
 import { ArrowRight} from 'lucide-react'
 
@@ -46,7 +45,6 @@ const Navbar = () => {
           Book Now
           <ArrowRight className='rotate-0 group-hover:-rotate-45 transition-all'/>
         </a>
-       <ThemeSwitcher/> 
           <MenuButton/>       
       </div>
 

@@ -45,7 +45,7 @@ const MenuButton = () => {
             menuOpen && ' h-[30%] rotate-45 origin-top'
             )}/>
         </div> 
-        <section className={`fixed top-0 bg-black h-full ${menuOpen?"w-full right-0":"w-[0%] left-0 "} overflow-hidden transition-all duration-700 `}>
+        <section className={`fixed top-0 inset-0 bg-black w-full ${menuOpen?"h-full":"h-[0%] "} overflow-hidden transition-all duration-700 `}>
           <main  className='relative  size-full text-7xl text-white flex flex-col justify-center items-center gap-8'>
             {
               MenuLinks.map(({title,link,href},i)=>{
