@@ -50,6 +50,13 @@ export const projectInfos=[
     link:'https://my-book-scanner.vercel.app/',
   },
   {
+    id:4,
+    img:'/images/geminifrontend.png',
+    title:'Gemini-Frontend',
+    description:'A polished frontend clone of Google Gemini, replicating its modern UI and interactive features. Built to demonstrate advanced React and CSS techniques, it offers a seamless and visually engaging user experience.',
+    link:'https://geminifrontendclone.vercel.app/',
+  },
+  {
     id:2,
     img:'/images/moonex.png',
     title:'Moonex',
@@ -64,13 +71,6 @@ export const projectInfos=[
     link: 'https://funds-connect.vercel.app/',
   },
   {
-    id:4,
-    img:'/images/proj-1.png',
-    title:'Make-Resume',
-    description:'A dynamic web application designed to help users craft professional resumes with ease. It offers a clean interface for creating and customizing resumes, enabling users to preview and download their work in PDF format.',
-    link:'https://makeresume-ecru.vercel.app/',
-  },
-  {
     id:5,
     img:'/images/healthcare.png',
     title:'Healthcare',
@@ -82,6 +82,13 @@ export const projectInfos=[
 
 
 export const otherProjects = [
+    {
+    id:91,
+    img:'/images/proj-1.png',
+    title:'Make-Resume',
+    description:'A dynamic web application designed to help users craft professional resumes with ease. It offers a clean interface for creating and customizing resumes, enabling users to preview and download their work in PDF format.',
+    link:'https://makeresume-ecru.vercel.app/',
+  },
   {
     id:96,
     img:'/images/instakart.png',
