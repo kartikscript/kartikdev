@@ -22,7 +22,7 @@ export default function Home() {
         <Reveal>
           <div className="space-y-10 w-full text-center uppercase pb-8 px-4  ">
             <h1 className=" tracking-wide text-7xl md:text-8xl lg:text-9xl text-white">I am Kartik</h1>
-            <h2 className="font-[400] font-Oxanium  sm:whitespace-nowrap text-4xl sm:text-3xl md:text-[2.5rem] lg:text-[3.5rem] xl:text-7xl tracking-[0.3em] text-white/60">A Frontend Developer</h2>
+            <h2 className="font-[400] font-Oxanium  sm:whitespace-nowrap text-4xl sm:text-3xl md:text-[2.5rem] lg:text-[3.5rem] xl:text-7xl tracking-[0.3em] text-white/60">A Website Developer</h2>
           </div>
         </Reveal> 
       </header>
