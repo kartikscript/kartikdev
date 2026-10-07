@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import { projectInfos } from '@/constants/NavLinks'
+import { projectInfos, analysisProjects } from '@/constants/NavLinks'
 import Image from 'next/image'
 import { ArrowRight, ExternalLink } from 'lucide-react'
 import Title from '../Title'
@@ -19,8 +19,9 @@ const Projects = () => {
   }
   
   return (
-      <div id='Projects' className='relative min-h-screen px-6'>
+      <div id='Projects' className='relative min-h-screen px-6 overflow-hidden'>
         <Title title='Project Highlights'/>
+        <h1 className='text-3xl font-bold text-white mb-8 underline'>Frontend Development Projects</h1>
         <Blob left='20%' top='10%'/>
         <Blob right='50%' top='60%'/>
         <main className='relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-12 *:rounded-3xl *:border *:border-white/70'>
@@ -60,8 +61,26 @@ const Projects = () => {
               </h2>
           </Link>
         </main>
+        <main className='mt-20'>
+          <h1 className='text-3xl font-bold text-white underline mb-6'>Data Analytics Projects</h1>
+          <section className='grid grid-cols-1 md:grid-cols-2    gap-4 xl:gap-12 *:rounded-3xl *:border *:border-white/70 py-4'>
+            {
+              analysisProjects.map(({id,description,link,title})=>{
+                return(
+                  <a key={id} target='_blank' href={link} className='group hover:scale-105 opacity-80 transition-all duration-500 flex flex-col items-center shadow-primary-800/50 text-center p-2  bg-primary-800 dark:bg-black/60'>
+                    <h2 className='mb-4 font-Oxanium text-2xl tracking-widest font-medium uppercase border-b-[1px] text-white dark:text-primary-100 border-white/40 px-3 inline-block'>{title}</h2>
+                    <p className='text-white/60 font-light text-sm tracking-wider leading-relaxed'>{description}</p>
+                  </a>
+
+                )
+            }
+            )
+            }
+          </section>
+        </main>
       </div>   
   )
 }
+
 
 export default Projects

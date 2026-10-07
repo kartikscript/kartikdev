@@ -147,3 +147,31 @@ export const otherProjects = [
     link: 'https://vishalbhartischool.vercel.app/',
   },
 ];
+
+export const analysisProjects = [
+  {
+    id: 8,
+    title: 'Customer Shopping Analysis',
+    description:'Cleaned and handled missing data using Python and Pandas, analyzed customer shopping data in MySQL to identify key insights such as total revenue, top-performing products and categories, and customer purchasing trends, and created interactive Power BI visualizations to present the findings clearly.',
+    link:'https://github.com/kartikscript/customer-behaviour-analysis',
+  },
+  {
+    id: 9,
+    title: 'COVID Analysis',
+    description:'Analyzed COVID-19 data using MySQL to identify trends in cases, deaths, recoveries, and vaccination rates across different countries and regions. Used SQL queries to calculate key statistics and compare the impact of COVID-19 over time, then created interactive Power BI dashboards to visualize trends, comparisons, and key insights.',
+    link:'https://github.com/kartikscript/COVID-Analysis',
+  },
+  {
+    id: 10,
+    title: 'Housing Analysis',
+    description:'Cleaned and standardized housing data using MySQL by handling missing values, correcting inconsistent data, standardizing fields, and removing duplicate records. Analyzed the cleaned dataset to identify useful housing trends and insights, and created interactive Power BI visualizations to present the findings effectively.',
+    link:'https://github.com/kartikscript/Housing-Data-Analysis',
+  },
+  {
+    id: 11,
+    title: 'Movie Analysis',
+    description:'Cleaned and standardized movie data by handling missing values and inconsistencies. Analyzed relationships between different movie attributes using correlation analysis and created graphs to identify meaningful patterns. Built interactive Power BI visualizations to present key findings and insights from the dataset.',
+    link:'https://github.com/kartikscript/movie-data-analysis'
+  }
+
+]

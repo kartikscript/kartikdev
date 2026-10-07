@@ -21,7 +21,7 @@ const Techs = () => {
   const scale6 = useTransform(scrollYProgress, [0,1], [1,6])
   const pics = [
     {
-      src:'/images/html.png',
+      src:'/images/sql.png',
       scale:scale6,
       top:'10%',
       left:'17%',
@@ -53,7 +53,7 @@ const Techs = () => {
       // height:'55vh'
     },
     {
-      src:'/images/postgresql.png',
+      src:'/images/typescript.png',
       scale:scale8,
       top:'-15%',
       left:'-20%',
@@ -61,7 +61,7 @@ const Techs = () => {
       // height:'35vh'
     },
     {
-      src:'/images/tailwind.png',
+      src:'/images/powerbi.jpg',
       scale:scale6,
       top:'-23%',
       left:'-7%',
@@ -69,7 +69,7 @@ const Techs = () => {
       // height:'20vh'
     },
     {
-      src:'/images/typescript.png',
+      src:'/images/tableau.jpg',
       scale:scale8,
       top:'-20%',
       left:'7%',
@@ -77,7 +77,7 @@ const Techs = () => {
       // height:'25vh'
     },
     {
-      src:'/images/node-js.png',
+      src:'/images/python.png',
       scale:scale6,
       top:'-15%',
       left:'18%',

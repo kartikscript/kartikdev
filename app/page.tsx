@@ -21,8 +21,9 @@ export default function Home() {
         <Navbar/>
         <Reveal>
           <div className="space-y-10 w-full text-center uppercase pb-8 px-4  ">
-            <h1 className=" tracking-wide text-7xl md:text-8xl lg:text-9xl text-white">I am Kartik</h1>
-            <h2 className="font-[400] font-Oxanium  sm:whitespace-nowrap text-4xl sm:text-3xl md:text-[2.5rem] lg:text-[3.5rem] xl:text-7xl tracking-[0.3em] text-white/60">A Frontend Developer</h2>
+            <h1 className=" tracking-wide text-7xl md:text-8xl lg:text-9xl text-white/70">I am Kartik</h1>
+            <h2 className="font-[400] font-Oxanium  sm:whitespace-nowrap text-4xl sm:text-3xl md:text-[2.5rem] lg:text-[3.5rem] xl:text-7xl tracking-[0.3em] text-white">A Data Analyst</h2>
+            <h2 className="font-[400] font-Oxanium  sm:whitespace-nowrap text-4xl sm:text-3xl md:text-[2.5rem] lg:text-[3.5rem] xl:text-4xl tracking-[0.3em] text-white">& Frontend Developer</h2>
           </div>
         </Reveal> 
       </header>
@@ -51,9 +52,9 @@ export default function Home() {
         </Reveal>
         <Reveal>
           <div >
-            <EvervaultCard className="h-[20vh] sm:h-[40vh] tracking-[0.1em] font-Oxanium" text="DESIGN"/>
-            <p className="leading-relaxed text-gray-800 dark:text-white/70  tracking-wide font-semibold dark:font-light">Crafting visually compelling and intuitive interfaces that resonate with your audience.
-            I focus on delivering designs that are both aesthetically pleasing and user-centric.
+            <EvervaultCard className="h-[20vh] sm:h-[40vh] tracking-[0.1em] font-Oxanium" text="Analysis"/>
+            <p className="leading-relaxed text-gray-800 dark:text-white/70  tracking-wide font-semibold dark:font-light">
+              Conducting in-depth analysis of data to extract meaningful insights and drive informed decision-making.
             </p>
           </div>
         </Reveal>
