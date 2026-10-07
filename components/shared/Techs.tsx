@@ -9,7 +9,7 @@ const Techs = () => {
 
   const imgRef = useRef<HTMLDivElement|null>(null)
 
-  const texts=['HTML5','CSS3','JavaScript','Tailwind CSS','MongoDB','TypeScript','NextJS','PostgreSQL']
+  const texts=[ 'JavaScript', 'Tailwind CSS', 'MongoDB', 'TypeScript', 'NextJS', 'MYSQL', 'Python', 'PowerBI', 'Tableau', 'Excel']
 
   const {scrollYProgress} = useScroll({
     target:imgRef

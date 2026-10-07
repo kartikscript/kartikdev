@@ -14,7 +14,7 @@ export default function Home() {
 
  
   return (<>
-      <header id="Home" className="relative  bg-cover bg-black h-[70vh] sm:h-screen flex items-end justify-center overflow-hidden">
+      <header id="Home" className="relative  bg-cover bg-black  h-screen flex items-end justify-center overflow-hidden">
         <Blob bottom="-30%" left="50%"/>
         <Blob top="-20%" left="50%"/>
         <BackgroundBeams/>
@@ -72,7 +72,7 @@ export default function Home() {
       </section>
       <div className="w-[100%] h-[2px] bg-black bg-gradient-to-r from-transparent via-white to-transparent "/>
 
-       <section id='Contact' className="relative h-[80vh] sm:h-screen overflow-hidden bg-primary-100/30 dark:bg-black py-10 px-6">
+       <section id='Contact' className="relative h-screen overflow-hidden bg-primary-100/30 dark:bg-black py-10 px-6">
           <Blob left="10%" top="-20%"/>
           <Blob left="30%" top="-20%"/>
           <Blob left="60%" top="-20%"/>

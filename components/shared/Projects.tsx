@@ -21,7 +21,7 @@ const Projects = () => {
   return (
       <div id='Projects' className='relative min-h-screen px-6 overflow-hidden'>
         <Title title='Project Highlights'/>
-        <h1 className='text-3xl font-bold text-white mb-8 underline'>Frontend Development Projects</h1>
+        <h1 className=' text-lg sm:text-3xl font-bold text-white mb-8 underline'>Frontend Development Projects</h1>
         <Blob left='20%' top='10%'/>
         <Blob right='50%' top='60%'/>
         <main className='relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-12 *:rounded-3xl *:border *:border-white/70'>
@@ -62,7 +62,7 @@ const Projects = () => {
           </Link>
         </main>
         <main className='mt-20'>
-          <h1 className='text-3xl font-bold text-white underline mb-6'>Data Analytics Projects</h1>
+          <h1 className='text-lg sm:text-3xl font-bold text-white underline mb-6'>Data Analytics Projects</h1>
           <section className='grid grid-cols-1 md:grid-cols-2    gap-4 xl:gap-12 *:rounded-3xl *:border *:border-white/70 py-4'>
             {
               analysisProjects.map(({id,description,link,title})=>{
